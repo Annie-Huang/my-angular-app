@@ -1,0 +1,2 @@
+This project is use for testing ea-c-l npm package publish setup.
+Don't check in anything.
