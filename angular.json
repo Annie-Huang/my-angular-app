@@ -28,7 +28,6 @@
             ],
             "styles": [
               "node_modules/ea-c-l-test/resources/themes/nova-light/theme.css",
-              "node_modules/ea-c-l-test/resources/eauicomp.min.css",
               "src/styles.scss"
             ],
             "scripts": []

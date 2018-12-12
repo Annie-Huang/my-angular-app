@@ -1,4 +1,6 @@
 This project is use for testing ea-c-l npm package publish setup.
 Don't check in anything.
 
+D:\Temp\my-angular-app>npm install ..\ea-component-library\dist\ea-comp-lib\ea-comp-lib-0.0.1.tgz
+D:\Temp\my-angular-app>npm uninstall ea-comp-lib
 

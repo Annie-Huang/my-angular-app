@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve",
+    "start": "ng serve --port 4201",
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
@@ -22,6 +22,7 @@
     "@angular/router": "~7.0.0",
     "core-js": "^2.5.4",
     "ea-c-l-test": "0.0.6",
+    "ea-comp-lib": "file:../ea-component-library/dist/ea-comp-lib/ea-comp-lib-0.0.1.tgz",
     "rxjs": "~6.3.3",
     "zone.js": "~0.8.26"
   },

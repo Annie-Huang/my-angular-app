@@ -4,7 +4,7 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
-import {ButtonModule} from 'ea-c-l-test/eauicomp';
+import {ButtonModule} from 'ea-comp-lib';
 
 @NgModule({
   declarations: [
