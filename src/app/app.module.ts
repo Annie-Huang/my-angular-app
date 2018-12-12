@@ -4,7 +4,7 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
-import {ButtonModule} from 'ea-comp-lib';
+import {ButtonModule, FooModule} from 'ea-comp-lib';
 
 @NgModule({
   declarations: [
@@ -13,7 +13,8 @@ import {ButtonModule} from 'ea-comp-lib';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    ButtonModule
+    ButtonModule,
+    FooModule
   ],
   providers: [],
   bootstrap: [AppComponent]
