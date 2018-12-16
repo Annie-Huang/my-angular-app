@@ -2,7 +2,7 @@ import { storiesOf } from '@storybook/angular';
 import { withNotes } from '@storybook/addon-notes';
 import { action } from '@storybook/addon-actions';
 
-import {CardComponent} from '../app/card/card.component';
+import {CardComponent} from './card.component';
 
 storiesOf('Card', module)
   .add('empty', () => ({
