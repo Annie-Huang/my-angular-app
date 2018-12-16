@@ -10,7 +10,7 @@ storiesOf('Welcome', module).add('to Storybook', () => ({
   props: {},
 }));
 
-storiesOf('Button', module)
+/*storiesOf('Button', module)
   .add('with text', () => ({
     component: Button,
     props: {
@@ -43,4 +43,6 @@ storiesOf('Another Button', module).add('button with link to another story', () 
     text: 'Go to Welcome Story',
     onClick: linkTo('Welcome'),
   },
-}));
+}));*/
+
+
