@@ -1,8 +1,10 @@
 https://alligator.io/angular/storybook-angular/
 https://storybook.js.org/basics/guide-angular/
 
+
 https://stackoverflow.com/questions/29576341/what-does-the-code-generator-has-deoptimised-the-styling-of-some-file-as-it-e
 https://stackoverflow.com/questions/34438465/is-there-a-way-to-alphabetize-package-json-without-installing-a-package
+https://github.com/storybooks/storybook/tree/master/lib/cli
 
 ############################################################################
 
@@ -20,6 +22,9 @@ D:\Temp\my-angular-app>npm remove --save example; npm remove --save-dev example 
 
 D:\Temp\my-angular-app>npm run storybook
 
+--------------
+
+D:\Temp\my-angular-app>ng g component card
 
 
 
