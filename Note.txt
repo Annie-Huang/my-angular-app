@@ -1,4 +1,5 @@
 https://alligator.io/angular/storybook-angular/
+https://www.learnstorybook.com/angular/en/get-started/
 https://storybook.js.org/basics/guide-angular/
 https://storybook.js.org/configurations/cli-options/
 
@@ -11,7 +12,7 @@ https://github.com/storybooks/storybook/issues/2501
 
 D:\Temp\my-angular-app>npm i --save-dev @storybook/angular @babel/core babel-loader
 
-----------
+===============
 
 D:\Temp\my-angular-app>npm install -g @storybook/cli
 D:\Temp\my-angular-app>npx -p @storybook/cli sb init --type angular
@@ -23,7 +24,7 @@ D:\Temp\my-angular-app>npm remove --save example; npm remove --save-dev example 
 
 D:\Temp\my-angular-app>npm run storybook
 
-
+*****
 D:\Temp\my-angular-app>npm run build-storybook
 D:\Temp\my-angular-app>cd storybook-static
 D:\Temp\my-angular-app\storybook-static>npx http-server
@@ -33,11 +34,11 @@ Available on:
   http://192.168.1.101:8080
   http://127.0.0.1:8080
 
---------------
+==============
 
 D:\Temp\my-angular-app>ng g component card
 
-
+D:\Temp\my-angular-app>ng g component task
 
 
 
