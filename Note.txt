@@ -7,6 +7,8 @@ https://stackoverflow.com/questions/29576341/what-does-the-code-generator-has-de
 https://stackoverflow.com/questions/34438465/is-there-a-way-to-alphabetize-package-json-without-installing-a-package
 https://github.com/storybooks/storybook/tree/master/lib/cli
 https://github.com/storybooks/storybook/issues/2501
+https://github.com/webpack-contrib/sass-loader
+https://gist.github.com/mburakerman/629783c16acf5e5f03de60528d3139af
 
 ############################################################################
 
@@ -33,6 +35,12 @@ Starting up http-server, serving ./
 Available on:
   http://192.168.1.101:8080
   http://127.0.0.1:8080
+
+*****
+Add webpack to handle scss transpile to css.
+D:\Temp\my-angular-app>npm install --save-dev webpack webpack-cli webpack-dev-server
+D:\Temp\my-angular-app>npm install style-loader css-loader sass-loader --save-dev
+
 
 ==============
 
