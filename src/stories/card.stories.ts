@@ -34,6 +34,7 @@ storiesOf('Card', module)
     props: {
       title: 'A card...',
       subtitle: 'Waiting to be clicked-on',
+      // Actions triggered by outputs can be logged using the action addon.
       btnClicked: action('👊 Button was clicked')
     }
   }));
