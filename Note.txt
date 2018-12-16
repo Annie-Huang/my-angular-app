@@ -1,0 +1,32 @@
+https://alligator.io/angular/storybook-angular/
+https://storybook.js.org/basics/guide-angular/
+
+https://stackoverflow.com/questions/29576341/what-does-the-code-generator-has-deoptimised-the-styling-of-some-file-as-it-e
+https://stackoverflow.com/questions/34438465/is-there-a-way-to-alphabetize-package-json-without-installing-a-package
+
+############################################################################
+
+D:\Temp\my-angular-app>npm i --save-dev @storybook/angular @babel/core babel-loader
+
+----------
+
+D:\Temp\my-angular-app>npm install -g @storybook/cli
+D:\Temp\my-angular-app>npx -p @storybook/cli sb init --type angular
+        This will add the following two scripts into your project:
+        "storybook": "start-storybook -p 6006",
+        "build-storybook": "build-storybook"
+
+D:\Temp\my-angular-app>npm remove --save example; npm remove --save-dev example     << run this to reorder devdependencies list, for some reason the above command just put the new package in the end of the list.
+
+D:\Temp\my-angular-app>npm run storybook
+
+
+
+
+
+
+
+
+
+
+
