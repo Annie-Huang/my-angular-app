@@ -1,6 +1,6 @@
 https://alligator.io/angular/storybook-angular/
 https://storybook.js.org/basics/guide-angular/
-
+https://storybook.js.org/configurations/cli-options/
 
 https://stackoverflow.com/questions/29576341/what-does-the-code-generator-has-deoptimised-the-styling-of-some-file-as-it-e
 https://stackoverflow.com/questions/34438465/is-there-a-way-to-alphabetize-package-json-without-installing-a-package
@@ -22,6 +22,16 @@ D:\Temp\my-angular-app>npx -p @storybook/cli sb init --type angular
 D:\Temp\my-angular-app>npm remove --save example; npm remove --save-dev example     << run this to reorder devdependencies list, for some reason the above command just put the new package in the end of the list.
 
 D:\Temp\my-angular-app>npm run storybook
+
+
+D:\Temp\my-angular-app>npm run build-storybook
+D:\Temp\my-angular-app>cd storybook-static
+D:\Temp\my-angular-app\storybook-static>npx http-server
+...
+Starting up http-server, serving ./
+Available on:
+  http://192.168.1.101:8080
+  http://127.0.0.1:8080
 
 --------------
 
