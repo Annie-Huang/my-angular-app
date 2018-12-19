@@ -90,6 +90,9 @@
             "styles": [
               "src/styles.scss"
             ],
+            "stylePreprocessorOptions": {
+              "includePaths": ["node_modules/ea-ui/assets/scss"]
+            },
             "scripts": [],
             "assets": [
               "src/favicon.ico",
