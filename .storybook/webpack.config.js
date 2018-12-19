@@ -23,6 +23,7 @@
 //   }
 // }
 
+
 module.exports = {
   module: {
     rules: [{
