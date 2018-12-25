@@ -2,6 +2,7 @@ https://alligator.io/angular/storybook-angular/
 https://www.learnstorybook.com/angular/en/get-started/
 https://storybook.js.org/basics/guide-angular/
 https://storybook.js.org/configurations/cli-options/
+https://storybook.js.org/configurations/custom-webpack-config/
 
 https://stackoverflow.com/questions/29576341/what-does-the-code-generator-has-deoptimised-the-styling-of-some-file-as-it-e
 https://stackoverflow.com/questions/34438465/is-there-a-way-to-alphabetize-package-json-without-installing-a-package
@@ -9,6 +10,10 @@ https://github.com/storybooks/storybook/tree/master/lib/cli
 https://github.com/storybooks/storybook/issues/2501
 https://github.com/webpack-contrib/sass-loader
 https://gist.github.com/mburakerman/629783c16acf5e5f03de60528d3139af
+https://github.com/storybooks/storybook/issues/3450
+https://github.com/storybooks/storybook/issues/3814
+
+
 
 ############################################################################
 
@@ -39,7 +44,7 @@ Available on:
 *****
 Add webpack to handle scss transpile to css.
 D:\Temp\my-angular-app>npm install --save-dev webpack webpack-cli webpack-dev-server
-D:\Temp\my-angular-app>npm install style-loader css-loader sass-loader --save-dev
+D:\Temp\my-angular-app>npm install sass-loader node-sass --save-dev		<< sass-load rely on node-sass
 
 
 ==============
@@ -47,8 +52,6 @@ D:\Temp\my-angular-app>npm install style-loader css-loader sass-loader --save-de
 D:\Temp\my-angular-app>ng g component card
 
 D:\Temp\my-angular-app>ng g component task
-
-
 
 
 
