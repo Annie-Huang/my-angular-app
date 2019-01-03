@@ -1,5 +1,10 @@
 https://alligator.io/angular/storybook-angular/
+
 https://www.learnstorybook.com/angular/en/get-started/
+https://github.com/chromaui/learnstorybook-code/tree/angular
+https://github.com/Annie-Huang/learnstorybook-code/tree/angular
+
+-----------------------------------------------------------------------------------
 https://storybook.js.org/basics/guide-angular/
 https://storybook.js.org/configurations/cli-options/
 https://storybook.js.org/configurations/custom-webpack-config/
@@ -54,7 +59,8 @@ D:\Temp\my-angular-app>ng g component card
 D:\Temp\my-angular-app>ng g component task
 
 
-
+Will continue with D:\Temp\learnstorybook-code2 because the whole less while is different. 
+D:\Temp\learnstorybook-code2 is copy from D:\Temp\learnstorybook-code, which has the original code from the https://github.com/chromaui/learnstorybook-code
 
 
 
