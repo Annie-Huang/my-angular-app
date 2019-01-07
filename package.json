@@ -25,6 +25,7 @@
     "ea-ui": "file:../ea-component-library/dist/ea-ui/ea-ui-0.0.1.tgz",
     "install": "^0.12.2",
     "npm": "^6.5.0",
+    "primeicons": "^1.0.0",
     "primeng": "^7.0.3",
     "rxjs": "~6.3.3",
     "zone.js": "~0.8.26"

@@ -4,3 +4,5 @@ Don't check in anything.
 D:\Temp\my-angular-app>npm install ..\ea-component-library\dist\ea-comp-lib\ea-comp-lib-0.0.1.tgz
 D:\Temp\my-angular-app>npm uninstall ea-comp-lib
 
+
+192-168-1-100:my-angular-app anniehuang$ npm install primeicons --save
