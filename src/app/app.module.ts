@@ -5,10 +5,12 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
 import {ButtonModule, FooModule} from 'ea-ui';
+import { TypographyTestComponent } from './typography-test/typography-test.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    TypographyTestComponent
   ],
   imports: [
     BrowserModule,

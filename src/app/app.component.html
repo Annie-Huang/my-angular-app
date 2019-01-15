@@ -58,6 +58,141 @@
     <div class="test-font-500-italic-class">museo_sans_rounded500_italic - Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius, provident?</div>
     <div class="test-font-700-italic-class">museo_sans_rounded700_italic - Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius, provident?</div>
     <div class="test-font-900-italic-class">museo_sans_rounded900_italic - Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius, provident?</div>
+    <br />
+-------------------------------------- <br />
+
+    <div class="description1">
+      1. google chrome font-weight for h1-h5 are: bold, which is weight-weight: 700. Question: Do we need to manually set each font-weight to make sure it won't be overriden?
+      <br />
+      2. google chrome doesn't have default color (I couldn't find it from web). Color #333 seems the same as chrome default color to me. Question: Do we need to mannual set each color to make sure it's definitely #333?
+      <br />
+      3. h1-h5 as default setting for margin. Do we suggest people to reset it??
+      <br />
+      4. There is currently a Body Bold design, which is missing in _types_mixins.scss (only got ea-types-body)
+      <br />
+      5. There is currently a Disclaimer design, which is missing in _types_mixins.scss (only got ea-types-body)
+      <br />
+      6. How to apply gobal style.
+      <br />
+      ...
+      <br />
+      8. ea-types-weight only got 300, 500, 700, 900. It's missing the 300_italic, 500_italic, 700_italic, 900_italic that are currently missing. Shall we add them into ea-styoes-weight??
+      <br />
+      9. Again, the font-weight maybe overriden by User agent style (depend on the browser), shall we add the reinforcement into ea-types-weight?
+      <br />
+      Quetions to Friz:
+      <br />
+      A: Only Desktop has Body Bold, is it missing in the tablet and mobile version? Answer: can remove Body Bold, not used.
+      <br />
+      B: The Tablet has two body section and missing disclaimer, Is one of them disclaimer? Answer: The second one is disclaimer.
+      <br />
+      C: Fritz also said we could get rid of tablet design.
+
+      <br />
+      To myself:
+      <br />
+      I: Make ea-five-stars() working from _types-mixins.scss. -- Done.
+      <br />
+      II: Rename eauicomp.css to ea-ui.css from gulp files.
+      <br />
+      III: Test Tablet and Mobile is correct as the designer describe in invision/zeplin.
+      <br />
+      <br />
+    </div>
+
+    <div class="description2">
+      Desktop:
+      <br />
+      H1 ----------- font-weight: 500;(weight-500); font-size: 44px; line-height: 1.4; color: #333;($color-shadow-black);
+      <br />
+      H2 ----------- font-weight: 700;(weight-700); font-size: 30px; line-height: 1.4; color: #333;($color-shadow-black);
+      <br />
+      H3 ----------- font-weight: 700;(weight-700); font-size: 25px; line-height: 1.4; color: #333;($color-shadow-black);
+      <br />
+      H4 ----------- font-weight: 700;(weight-700); font-size: 20px; line-height: 1.4; color: #333;($color-shadow-black);
+      <br />
+      Body Bold -- font-weight: 500;(weight-500); font-size: 16px; line-height: 1.625; color: #333;($color-shadow-black);
+      <br />
+      Body --------- font-weight: 300;(weight-300); font-size: 16px; line-height: 1.625; color: #333;($color-shadow-black);
+      <br />
+      Disclaimer -- font-weight: 300;(weight-300); font-size: 14px; line-height: 1.4; color: #333;($color-shadow-black);
+      <br />
+      <br />
+
+      Tablet:
+      <br />
+      H1 ----------- font-weight: 500;(weight-500); font-size: 40px; line-height: 1.4; color: #333;($color-shadow-black);
+      <br />
+      H2 ----------- font-weight: 700;(weight-700); font-size: 27px; line-height: 1.4; color: #333;($color-shadow-black);
+      <br />
+      H3 ----------- font-weight: 700;(weight-700); font-size: 22px; line-height: 1.4; color: #333;($color-shadow-black);
+      <br />
+      H4 ----------- font-weight: 700;(weight-700); font-size: 18px; line-height: 1.4; color: #333;($color-shadow-black);
+      <br />
+      Body Bold -- Missing????
+      <br />
+      Body --------- font-weight: 300;(weight-300); font-size: 16px; line-height: 1.625; color: #333;($color-shadow-black);
+      <br />
+      Disclaimer -- font-weight: 300;(weight-300); font-size: 14px; line-height: 1.625; color: #333;($color-shadow-black); ??? Is this disclaimer, why line-height didnt' change compared to desktop???
+      <br />
+      <br />
+
+      Mobile:
+      <br />
+      H1 ----------- font-weight: 500;(weight-500); font-size: 30px; line-height: 1.4; color: #333;($color-shadow-black);
+      <br />
+      H2 ----------- font-weight: 700;(weight-700); font-size: 24px; line-height: 1.4; color: #333;($color-shadow-black);
+      <br />
+      H3 ----------- font-weight: 700;(weight-700); font-size: 20px; line-height: 1.4; color: #333;($color-shadow-black);
+      <br />
+      H4 ----------- font-weight: 700;(weight-700); font-size: 16px; line-height: 1.4; color: #333;($color-shadow-black);
+      <br />
+      Body Bold -- Missing????
+      <br />
+      Body --------- font-weight: 300;(weight-300); font-size: 16px; line-height: 1.625; color: #333;($color-shadow-black);
+      <br />
+      Disclaimer -- font-weight: 300;(weight-300); font-size: 12px; line-height: 1.4; color: #333;($color-shadow-black);
+      <br />
+      <br />
+
+      Global:
+      <br />
+      Body --------- font-weight: 300;(weight-300); font-size: 16px; line-height: 1.625; color: #333;($color-shadow-black);
+      <br />
+      Disclaimer -- font-weight: 300;(weight-300); font-size: 14px; line-height: 1.4; color: #333;($color-shadow-black);
+      <br />
+
+    </div>
+
+    <br />
+    <br />
+    -------------------------------------- <br />
+
+
+    <h1>museo_sans_rounded500 - Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius, provident?</h1>
+    <div class="type-h1">museo_sans_rounded500 - Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius, provident?</div>
+    <div class="test-desktop-h1-class">museo_sans_rounded500 - Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius, provident?</div>
+    <br />
+
+    <h2>museo_sans_rounded700 - Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius, provident?</h2>
+    <div class="type-h2">museo_sans_rounded700 - Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius, provident?</div>
+    <div class="test-desktop-h2-class">museo_sans_rounded700 - Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius, provident?</div>
+    <br />
+
+    <h3>museo_sans_rounded700 - Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius, provident?</h3>
+    <div class="type-h3">museo_sans_rounded700 - Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius, provident?</div>
+    <div class="test-desktop-h3-class">museo_sans_rounded700 - Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius, provident?</div>
+    <br />
+
+    <h4>museo_sans_rounded700 - Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius, provident?</h4>
+    <div class="type-h4">museo_sans_rounded700 - Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius, provident?</div>
+    <div class="test-desktop-h4-class">museo_sans_rounded700 - Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius, provident?</div>
+    <br />
+
+
+    --------------------------------------
+
+
 
     <h3>Typographic for DESKTOP:</h3>
     <div class="test-desktop-h1-class">H1 - font-weight: 500;(use-font()); font-size: 44px; line-height: 1.4; color: #333;($color-shadow-black);</div>
@@ -76,6 +211,8 @@
     <div class="test-desktop-body-class">Body - Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius, provident?</div>
     <div class="test-desktop-disclaimer-class">Disclaimer - Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius, provident?</div>
     <br />
+    <h1>H1 heading</h1>
+    <div class="type-h1">H1 heading</div>
 
   </li>
   <li></li>
