@@ -1,0 +1,15 @@
+@import "ea-style/variables";
+@import "ea-style/mixins";
+
+.test-desktop-h1-class {
+  @include use-font();
+  font-size: 44px;
+  line-height: 1.4;
+  color: $color-shadow-black;
+}
+.test-desktop-h2-class {
+  @include use-font(700);
+  font-size: 30px;
+  line-height: 1.4;
+  color: $color-shadow-black;
+}
