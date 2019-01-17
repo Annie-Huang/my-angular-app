@@ -9,4 +9,181 @@
   <div class="type-h2">museo_sans_rounded700 - Lorem ipsum dolor sit amet, consectetur adipisicing elit</div>
   <div class="test-desktop-h2-class">museo_sans_rounded700 - Lorem ipsum dolor sit amet, consectetur adipisicing elit</div>
   <br />
+
+
+
+  <div>
+    Note:
+    - museo_sans_rounded500 is default value for use-font function, which contains all XXX300-XXX900, XXX300_italic-XXX900_italic value:
+    - When museo_sans_roundedXXX is not found, it will auto falls back to  is default value for use-font function, which contains all XXX300-XXX900, XXX300_italic-XXX900_italic value:
+  </div>
+
+  <h3>Purely apply font-family (without font-size, line-height, color etc):</h3>
+  <div class="test-font-300-class">museo_sans_rounded300 - Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius, provident?</div>
+  <div class="test-font-500-class">museo_sans_rounded500 - Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius, provident?</div>
+  <div class="test-font-700-class">museo_sans_rounded700 - Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius, provident?</div>
+  <div class="test-font-900-class">museo_sans_rounded900 - Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius, provident?</div>
+  <br />
+  <div class="weight-300">museo_sans_rounded300 - Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius, provident?</div>
+  <div class="test-font-300-class">museo_sans_rounded300 - Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius, provident?</div>
+
+  <div class="weight-500">museo_sans_rounded500 - Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius, provident?</div>
+  <div class="test-font-500-class">museo_sans_rounded500 - Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius, provident?</div>
+
+  <div class="weight-700">museo_sans_rounded700 - Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius, provident?</div>
+  <div class="test-font-700-class">museo_sans_rounded700 - Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius, provident?</div>
+
+  <div class="weight-900">museo_sans_rounded900 - Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius, provident?</div>
+  <div class="test-font-900-class">museo_sans_rounded900 - Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius, provident?</div>
+
+  <br />
+  <div class="test-font-300-italic-class">museo_sans_rounded300_italic - Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius, provident?</div>
+  <div class="test-font-500-italic-class">museo_sans_rounded500_italic - Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius, provident?</div>
+  <div class="test-font-700-italic-class">museo_sans_rounded700_italic - Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius, provident?</div>
+  <div class="test-font-900-italic-class">museo_sans_rounded900_italic - Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius, provident?</div>
+  <br />
+  -------------------------------------- <br />
+
+  <div class="description1">
+    DONE. 1. google chrome font-weight for h1-h5 are: bold, which is weight-weight: 700. Question: Do we need to manually set each font-weight to make sure it won't be overriden?
+          Answer: set font-weight: normal; to h1-h4
+    <br />
+    DONE. 2. google chrome doesn't have default color (I couldn't find it from web). Color #333 seems the same as chrome default color to me. Question: Do we need to mannual set each color to make sure it's definitely #333?
+          Answer: in _types-mixins.scss's ea-types-body, it is already set the body's color as #333, as it's packaged in eauicomp.scss, you don't need to do anything.
+    <br />
+    TODO: 3. h1-h5 as default setting for margin. Do we suggest people to reset it??
+          Answer: Do not reset it. Let it be. But get Tester to test in different browser. Put in demo notes that there is be margin etc setting as the user agent spreadsheet.
+    <br />
+    DONE. 5. There is currently a Disclaimer design, which is missing in _types_mixins.scss (only got ea-types-body)
+          Answer: I have Keep the .disclaimer classname in _types-mixins.scss. Asked Friz and he said keep it as font-size for 13px for desktop and 12px for mobile.
+    <br />
+    ...
+    <br />
+    Done. 8. ea-types-weight only got 300, 500, 700, 900. It's missing the 300_italic, 500_italic, 700_italic, 900_italic that are currently missing. Shall we add them into ea-styoes-weight??
+          Answer: We don't use italic atm in our app. Friz is happy to leave them out (weight(300_italic)) and add it later if we need them..
+    <br />
+    DONE. 9. Again, the font-weight maybe overriden by User agent style (depend on the browser), shall we add the reinforcement into ea-types-weight?
+          Answer: set font-weight=normal for weight300-900. It makes not different in Chrome whether we add it or not. But do it in case Chrome other browser ever change the user agent style...
+    <br />
+
+
+    Quetions to Friz:
+    <br />
+    DONE. A: Only Desktop has Body Bold, is it missing in the tablet and mobile version?
+          Answer: can remove Body Bold, not used.
+    <br />
+    DONE. B: The Tablet has two body section and missing disclaimer, Is one of them disclaimer?
+          Answer: The second one is disclaimer. But Fritz also said we could get rid of tablet design. Friz is also happy to get rid of the global design
+    <br />
+
+
+    To myself:
+    <br />
+    DONE. I: Make ea-five-stars() working from _types-mixins.scss.
+    <br />
+    TODO: II: Rename eauicomp.css to ea-ui.css from gulp files.
+    <br />
+    DONE. III: Test Tablet and Mobile is correct as the designer describe in invision/zeplin.
+    <br />
+    DONE. IIII: Make note in the Demo page about the no use legacy fonts that are currently comment out in the _fonts.scss file
+    <br />
+    DONE. V: Move the typography info to the typography-test.component.html and create a router link for it.
+    <br />
+          VI: Do I need to do the five star rating in the demo page??
+    <br />
+    <br />
+  </div>
+
+  <div class="description2">
+    Desktop:
+    <br />
+    H1 ----------- font-weight: 500;(weight-500); font-size: 44px; line-height: 1.4; color: #333;($color-shadow-black);
+    <br />
+    H2 ----------- font-weight: 700;(weight-700); font-size: 30px; line-height: 1.4; color: #333;($color-shadow-black);
+    <br />
+    H3 ----------- font-weight: 700;(weight-700); font-size: 25px; line-height: 1.4; color: #333;($color-shadow-black);
+    <br />
+    H4 ----------- font-weight: 700;(weight-700); font-size: 20px; line-height: 1.4; color: #333;($color-shadow-black);
+    <br />
+    Body --------- font-weight: 300;(weight-300); font-size: 16px; line-height: 1.625; color: #333;($color-shadow-black);
+    <br />
+    Disclaimer --- font-weight: 300;(weight-300); font-size: 13px; line-height: 1.4; color: #333;($color-shadow-black);
+    <br />
+    <br />
+
+    Mobile:
+    <br />
+    H1 ----------- font-weight: 500;(weight-500); font-size: 30px; line-height: 1.4; color: #333;($color-shadow-black);
+    <br />
+    H2 ----------- font-weight: 700;(weight-700); font-size: 24px; line-height: 1.4; color: #333;($color-shadow-black);
+    <br />
+    H3 ----------- font-weight: 700;(weight-700); font-size: 20px; line-height: 1.4; color: #333;($color-shadow-black);
+    <br />
+    H4 ----------- font-weight: 700;(weight-700); font-size: 16px; line-height: 1.4; color: #333;($color-shadow-black);
+    <br />
+    Body --------- font-weight: 300;(weight-300); font-size: 16px; line-height: 1.625; color: #333;($color-shadow-black);
+    <br />
+    Disclaimer --- font-weight: 300;(weight-300); font-size: 12px; line-height: 1.4; color: #333;($color-shadow-black);
+    <br />
+    <br />
+
+  </div>
+
+  <br />
+  <br />
+  -------------------------------------- <br />
+
+
+  <h1>AAAAAmuseo_sans_rounded500 - Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius, provident?</h1>
+  <div class="type-h1">AAAAAmuseo_sans_rounded500 - Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius, provident?</div>
+  <div class="test-desktop-h1-class">AAAAAmuseo_sans_rounded500 - Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius, provident?</div>
+  <br />
+
+  <h2>museo_sans_rounded700 - Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius, provident?</h2>
+  <div class="type-h2">museo_sans_rounded700 - Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius, provident?</div>
+  <div class="test-desktop-h2-class">museo_sans_rounded700 - Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius, provident?</div>
+  <br />
+
+  <h3>museo_sans_rounded700 - Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius, provident?</h3>
+  <div class="type-h3">museo_sans_rounded700 - Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius, provident?</div>
+  <div class="test-desktop-h3-class">museo_sans_rounded700 - Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius, provident?</div>
+  <br />
+
+  <h4>museo_sans_rounded700 - Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius, provident?</h4>
+  <div class="type-h4">museo_sans_rounded700 - Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius, provident?</div>
+  <div class="test-desktop-h4-class">museo_sans_rounded700 - Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius, provident?</div>
+  <br />
+
+  <div>museo_sans_rounded300 - Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius, provident?</div>
+  <div class="test-desktop-body-class">museo_sans_rounded300 - Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius, provident?</div>
+  <br />
+
+  <div class="disclaimer">museo_sans_rounded300 - Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius, provident?</div>
+  <div class="test-desktop-disclaimer-class">museo_sans_rounded300 - Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius, provident?</div>
+  <br />
+  --------------------------------------
+
+
+
+  <h3>Typographic for DESKTOP:</h3>
+  <div class="test-desktop-h1-class">H1 - font-weight: 500;(use-font()); font-size: 44px; line-height: 1.4; color: #333;($color-shadow-black);</div>
+  <div class="test-desktop-h2-class">H2 - font-weight: 700;(use-font(700)); font-size: 30px; line-height: 1.4; color: #333;($color-shadow-black);</div>
+  <div class="test-desktop-h3-class">H3 - font-weight: 700;(use-font(700)); font-size: 25px; line-height: 1.4; color: #333;($color-shadow-black);</div>
+  <div class="test-desktop-h4-class">H4 - font-weight: 700;(use-font(700)); font-size: 20px; line-height: 1.4; color: #333;($color-shadow-black);</div>
+  <div class="test-desktop-body-class">Body - font-weight: 300;(use-font(300)); font-size: 16px; line-height: 1.625; color: #333;($color-shadow-black);</div>
+  <div class="test-desktop-disclaimer-class">Disclaimer - font-weight: 300;(use-font(300)); font-size: 14px; line-height: 1.4; color: #333;($color-shadow-black);</div>
+  <br />
+  <div class="test-desktop-h1-class">H1 - Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius, provident?</div>
+  <div class="test-desktop-h2-class">H2 - Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius, provident?</div>
+  <div class="test-desktop-h3-class">H3 - Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius, provident?</div>
+  <div class="test-desktop-h4-class">H4 - Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius, provident?</div>
+  <div class="test-desktop-body-class">Body - Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius, provident?</div>
+  <div class="test-desktop-disclaimer-class">Disclaimer - Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius, provident?</div>
+  <br />
+
+
+
+
+
+
 </div>
