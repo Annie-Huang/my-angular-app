@@ -29,7 +29,7 @@
             "styles": [
               "node_modules/primeicons/primeicons.css",
               "node_modules/ea-c-l-test/resources/themes/nova-light/theme.css",
-              "node_modules/ea-ui/eauicomp.min.css",
+              "node_modules/ea-ui/ea-ui.min.css",
               "src/styles.scss"
             ],
             "stylePreprocessorOptions": {
