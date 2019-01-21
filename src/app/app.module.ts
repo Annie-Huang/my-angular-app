@@ -6,11 +6,13 @@ import { AppComponent } from './app.component';
 
 import {ButtonModule, FooModule} from 'ea-ui';
 import { TypographyTestComponent } from './typography-test/typography-test.component';
+import { TestcompComponent } from './testcomp/testcomp.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    TypographyTestComponent
+    TypographyTestComponent,
+    TestcompComponent
   ],
   imports: [
     BrowserModule,
