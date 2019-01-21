@@ -6,4 +6,9 @@
   @include use-font(900);
 }
 
+.test-palette-class {
+  width: 100px;
+  height: 40px;
+  background-color: $color-dusty-purple;
+}
 
