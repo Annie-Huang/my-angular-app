@@ -4,12 +4,16 @@ https://dzone.com/articles/start-your-end-to-end-testing-with-angular-and-cyp
 https://angularfirebase.com/lessons/cypress-angular-testing-end-to-end/
 https://medium.com/agilix/angular-and-cypress-data-cy-attributes-d698c01df062
 
+https://docs.cypress.io/guides/guides/command-line.html#Installation
+https://docs.cypress.io/guides/tooling/typescript-support.html#Transpiling-TypeScript-test-files
+https://docs.cypress.io/guides/tooling/intelligent-code-completion.html#Features
+https://intellij-support.jetbrains.com/hc/en-us/community/posts/360001518699-Typescript-Error-Initialization-error-angular-2-language-service-Cannot-read-property-CommandTypes-of-undefined
 
                          D:\Temp\my-angular-app>npm i -D cypress
         bradleys-mbp:my-angular-app anniehuang$ cypress open
 Bradleys-MacBook-Pro:my-angular-app anniehuang$ npm i -D @bahmutov/add-typescript-to-cypress
 
-
+D:\Temp\my-angular-app>npx cypress open
 
 
 

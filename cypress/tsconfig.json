@@ -8,15 +8,39 @@
 //  ],
 //  "types": ["cypress"]
 //}
+//{
+//  "extends": "../tsconfig",
+//  "compilerOptions": {
+//    "baseUrl": "../node_modules",
+//    "target": "es5",
+//    "types": ["cypress"]
+//  },
+//  "include": [
+//    "**/*.ts"
+//  ]
+//}
+//{
+//  "extends": "../tsconfig.json",
+//  "compilerOptions": {
+//    "strict": true,
+//    "baseUrl": "../node_modules",
+//    "target": "es5",
+//    "lib": ["es5", "dom"],
+//    "types": ["cypress"]
+//  },
+//  "include": [
+//    "**/*.ts"
+//  ]
+//}
 {
-  "extends": "../tsconfig",
   "compilerOptions": {
+    "allowJs": true,
     "baseUrl": "../node_modules",
-    "target": "es5",
-    "types": ["cypress"],
+    "types": [
+      "cypress"
+    ]
   },
   "include": [
-    "**/*.ts"
+    "**/*.*"
   ]
 }
-
