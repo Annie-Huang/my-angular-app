@@ -6,6 +6,7 @@ https://medium.com/agilix/angular-and-cypress-data-cy-attributes-d698c01df062
 
 
 D:\Temp\my-angular-app>npm i -D cypress
+bradleys-mbp:my-angular-app anniehuang$ cypress open
 
 
 
