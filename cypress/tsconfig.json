@@ -1,8 +1,22 @@
+// https://github.com/cypress-io/cypress/issues/1152
+//{
+//  "extends": "../tsconfig.json",
+//  "include": [
+//    "integration/*.ts",
+//    "support/*.ts",
+//    "../node_modules/cypress"
+//  ],
+//  "types": ["cypress"]
+//}
 {
-  "extends": "../tsconfig.json",
+  "extends": "../tsconfig",
+  "compilerOptions": {
+    "baseUrl": "../node_modules",
+    "target": "es5",
+    "types": ["cypress"],
+  },
   "include": [
-    "integration/*.ts",
-    "support/*.ts",
-    "../node_modules/cypress"
+    "**/*.ts"
   ]
 }
+
