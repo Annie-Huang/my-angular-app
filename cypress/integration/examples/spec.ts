@@ -1,6 +1,7 @@
 // cypress/integration/spec.ts
 it('loads', () => {
-  cy.visit('http://localhost:4201');
+  // cy.visit('http://localhost:4201');
+  cy.visit('');
   cy.get('app-root h1').contains('Welcome to my-angular-app!');
 });
 

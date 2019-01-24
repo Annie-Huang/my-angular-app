@@ -6,7 +6,8 @@ describe('Textfield form', () => {
     // run these tests as if in a desktop
     // browser with a 720p monitor
     cy.viewport(1000, 1300);
-    cy.visit('http://localhost:4200/#/textfield');
+    // cy.visit('http://localhost:4200/#/textfield');
+    cy.visitEAUIPage('/#/textfield');
   });
 
   it('loads', () => {
