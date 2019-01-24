@@ -12,12 +12,4 @@
   background-color: $color-dusty-purple;
 }
 
-.test-responsible-design {
-  font-size: 30px;
-  background-color: aquamarine;
-
-  @include media($ea-mobile) {
-    background-color: plum;
-  }
-}
 

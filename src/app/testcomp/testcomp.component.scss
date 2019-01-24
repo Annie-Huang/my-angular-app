@@ -1,0 +1,11 @@
+@import "ea-style/variables";
+@import 'ea-style/mixins/utils-mixins';
+
+.test-responsible-design {
+  font-size: 30px;
+  background-color: aquamarine;
+
+  @include media($ea-mobile) {
+    background-color: plum;
+  }
+}
