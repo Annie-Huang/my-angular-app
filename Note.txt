@@ -15,6 +15,9 @@ Bradleys-MacBook-Pro:my-angular-app anniehuang$ npm i -D @bahmutov/add-typescrip
 
 D:\Temp\my-angular-app>npx cypress open
 
+Not working.....
+bradleys-mbp:my-angular-app anniehuang$ npm i -D tslint-plugin-cypress
+bradleys-mbp:my-angular-app anniehuang$ ./node_modules/.bin/tslint -c tslint.json -p . cypress/**/*.ts -t stylish
 
 
 
