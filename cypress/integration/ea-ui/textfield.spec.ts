@@ -1,4 +1,4 @@
-describe('Textfield form', () => {
+describe('Textfield', () => {
   const typedName = 'my account name';
   const typedPostcode = '3000';
 
