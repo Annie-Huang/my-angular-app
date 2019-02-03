@@ -24,7 +24,7 @@ describe('Textfield', () => {
   });
 
   context('Form submission', () => {
-    it('Enters name and postcode on submit', () => {
+    it('Submit with name and postcode', () => {
       cy.get('#account-name-field')
         .type(typedName)
         .should('have.value', typedName);
@@ -45,7 +45,7 @@ describe('Textfield', () => {
         .should('not.exist');
     });
 
-    it('Not enter name and postcode on submit will generate error', () => {
+    it('Submit without name and postcode', () => {
       cy.get('button').contains('Submit')
         .click()
         .get('eui-field-errors div')
