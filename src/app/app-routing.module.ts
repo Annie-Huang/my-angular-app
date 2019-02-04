@@ -1,8 +1,10 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import {TypographyTestComponent} from './typography-test/typography-test.component';
+import {HomeComponent} from './home/home.component';
 
 const routes: Routes = [
+  { path: '', component: HomeComponent },
   { path: 'typographic', component: TypographyTestComponent }
 ];
 
