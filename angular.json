@@ -29,11 +29,11 @@
             "styles": [
               "node_modules/primeicons/primeicons.css",
               "node_modules/ea-c-l-test/resources/themes/nova-light/theme.css",
-              "node_modules/ea-ui/ea-ui.min.css",
+              "node_modules/@ea/ea-ui/ea-ui.min.css",
               "src/styles.scss"
             ],
             "stylePreprocessorOptions": {
-              "includePaths": ["node_modules/ea-ui/assets/scss"]
+              "includePaths": ["node_modules/@ea/ea-ui/assets/scss"]
             },
             "scripts": []
           },
@@ -92,7 +92,7 @@
               "src/styles.scss"
             ],
             "stylePreprocessorOptions": {
-              "includePaths": ["node_modules/ea-ui/assets/scss"]
+              "includePaths": ["node_modules/@ea/ea-ui/assets/scss"]
             },
             "scripts": [],
             "assets": [
