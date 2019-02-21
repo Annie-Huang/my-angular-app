@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import { ReactiveFormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
 
-import { ButtonModule, FooModule, FormModule, TextfieldModule } from '@ea/ea-ui';
+import { ButtonModule, FooModule, FormModule, TextfieldModule, SpinnerModule } from '@ea/ea-ui';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -27,7 +27,8 @@ import { TypographyTestComponent } from './typography-test/typography-test.compo
     FooModule,
     ReactiveFormsModule,
     FormModule,
-    TextfieldModule
+    TextfieldModule,
+    SpinnerModule
   ],
   providers: [],
   bootstrap: [AppComponent]
