@@ -6,7 +6,7 @@
     "start": "ng serve",
     "build": "ng build",
     "test": "ng test",
-    "testcafe": "testcafe chrome tests/",
+    "tc": "testcafe chrome testcafe-suite/",
     "lint": "ng lint",
     "e2e": "ng e2e"
   },
