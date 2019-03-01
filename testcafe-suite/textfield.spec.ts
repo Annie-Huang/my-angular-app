@@ -20,6 +20,5 @@ test('Accepts input', async t => {
 
   await t
     .typeText(name, typedName)
-    .expect(name.innerText).eql('my account name');
-
+    .expect(name.value).eql('my account name');
 });

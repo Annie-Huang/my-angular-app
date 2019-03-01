@@ -1,0 +1,26 @@
+https://thecodebarbarian.com/unhandled-promise-rejections-in-node.js.html
+https://changelogs.md/github/devexpress/testcafe/
+
+
+bradleys-mbp:my-angular-app anniehuang$ npm install testcafe --save-dev
+
+bradleys-mbp:my-angular-app anniehuang$ npm install testcafe-live --save-dev
+testcafe-live chrome d:\tests\example\example.js
+
+
+#################################
+When run in -L at the end:
+e.g:
+"testcafe-watch": "testcafe chrome ./testcafe-suite/textfield.spec.ts -L",
+
+Live mode is enabled.
+TestCafe now watches source files and reruns
+the tests once the changes are saved.
+
+You can use the following keys in the terminal:
+'Ctrl+S' - stops the test run;
+'Ctrl+R' - restarts the test run;
+'Ctrl+W' - enables/disables watching files;
+'Ctrl+C' - quits live mode and closes the browsers.
+
+
