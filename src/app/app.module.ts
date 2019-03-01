@@ -1,12 +1,13 @@
 import { NgModule } from '@angular/core';
 import { ReactiveFormsModule } from '@angular/forms';
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+
 import { BrowserModule } from '@angular/platform-browser';
 
 import { ButtonModule, FooModule, EuiFormsModule, TextfieldModule, SpinnerModule, ModalModule } from '@ea/ea-ui';
-
 import { AppRoutingModule } from './app-routing.module';
-import { AppComponent } from './app.component';
 
+import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { TextfieldTestComponent } from './textfield-test/textfield-test.component';
 import { TestcompComponent } from './testcomp/testcomp.component';
@@ -31,7 +32,8 @@ import { ModalComponent } from './modal/modal.component';
     EuiFormsModule,
     TextfieldModule,
     SpinnerModule,
-    ModalModule
+    ModalModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
