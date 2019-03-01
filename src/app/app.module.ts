@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import { ReactiveFormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
 
-import { ButtonModule, FooModule, EuiFormsModule, TextfieldModule, SpinnerModule } from '@ea/ea-ui';
+import { ButtonModule, FooModule, EuiFormsModule, TextfieldModule, SpinnerModule, ModalModule } from '@ea/ea-ui';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -11,6 +11,7 @@ import { HomeComponent } from './home/home.component';
 import { TextfieldTestComponent } from './textfield-test/textfield-test.component';
 import { TestcompComponent } from './testcomp/testcomp.component';
 import { TypographyTestComponent } from './typography-test/typography-test.component';
+import { ModalComponent } from './modal/modal.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { TypographyTestComponent } from './typography-test/typography-test.compo
     TypographyTestComponent,
     TestcompComponent,
     HomeComponent,
-    TextfieldTestComponent
+    TextfieldTestComponent,
+    ModalComponent
   ],
   imports: [
     BrowserModule,
@@ -28,7 +30,8 @@ import { TypographyTestComponent } from './typography-test/typography-test.compo
     ReactiveFormsModule,
     EuiFormsModule,
     TextfieldModule,
-    SpinnerModule
+    SpinnerModule,
+    ModalModule
   ],
   providers: [],
   bootstrap: [AppComponent]
