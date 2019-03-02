@@ -44,7 +44,7 @@ test('Submit without name and postcode', async t => {
     .expect(postcode.value).eql(typedPostcode)
     .click(submitButton)
     .expect(Selector('p').withText('Yay! This form as been submitted!').exists).ok()
-    .expect( Selector('eui-field-errors').exists).notOk()
+    .expect(Selector('eui-field-errors').exists).notOk()
     // .expect(msg.visible);
     // .expect( Selector('form').find('p').nth(3)).eql('Yay! This form as been submitted!', 'check element text', { timeout: 500 })
     // .expect(Selector('p').innerText).eql('text', 'check element text', { timeout: 500 });
@@ -63,8 +63,8 @@ test('Submit without name and postcode', async t => {
 
   await t
     .click(submitButton)
-    .expect( Selector('eui-field-errors').find('div').withText('Please enter a name').exists).ok()
-    .expect( Selector('eui-field-errors').find('div').withText('Please enter a postcode').exists).ok()
+    .expect(Selector('eui-field-errors').find('div').withText('Please enter a name').exists).ok()
+    .expect(Selector('eui-field-errors').find('div').withText('Please enter a postcode').exists).ok()
     // .expect(Selector('p').withText('Yay! This form as been submitted!').exists).ok()
   // .expect(msg.visible);
   // .expect( Selector('form').find('p').nth(3)).eql('Yay! This form as been submitted!', 'check element text', { timeout: 500 })
