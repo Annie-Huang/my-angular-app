@@ -1,6 +1,12 @@
 https://thecodebarbarian.com/unhandled-promise-rejections-in-node.js.html
 https://changelogs.md/github/devexpress/testcafe/
 
+https://devexpress.github.io/testcafe/documentation/using-testcafe/command-line-interface.html
+https://devexpress.github.io/testcafe/documentation/test-api/selecting-page-elements/selectors/using-selectors.html
+https://testcafe-discuss.devexpress.com/t/how-to-check-whether-an-element-is-visible/548
+https://devexpress.github.io/testcafe/documentation/test-api/assertions/
+https://devexpress.github.io/testcafe/documentation/test-api/assertions/assertion-api.html
+https://devexpress.github.io/testcafe/documentation/test-api/selecting-page-elements/examples-of-working-with-dom-elements.html
 
 bradleys-mbp:my-angular-app anniehuang$ npm install testcafe --save-dev
 
