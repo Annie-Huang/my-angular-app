@@ -1,7 +1,6 @@
 https://thecodebarbarian.com/unhandled-promise-rejections-in-node.js.html
 https://changelogs.md/github/devexpress/testcafe/
 
-https://devexpress.github.io/testcafe/documentation/using-testcafe/command-line-interface.html
 https://devexpress.github.io/testcafe/documentation/test-api/selecting-page-elements/selectors/using-selectors.html
 https://testcafe-discuss.devexpress.com/t/how-to-check-whether-an-element-is-visible/548
 https://devexpress.github.io/testcafe/documentation/test-api/assertions/
@@ -9,12 +8,17 @@ https://devexpress.github.io/testcafe/documentation/test-api/assertions/assertio
 https://devexpress.github.io/testcafe/documentation/test-api/selecting-page-elements/examples-of-working-with-dom-elements.html
 https://github.com/DevExpress/testcafe/issues/2755
 
+https://devexpress.github.io/testcafe/documentation/using-testcafe/command-line-interface.html
+https://devexpress.github.io/testcafe/documentation/using-testcafe/common-concepts/browsers/browser-support.html#browsers-in-cloud-testing-services
+https://www.npmjs.com/package/testcafe-browser-provider-saucelabs
+https://wiki.saucelabs.com/display/DOCS/Best+Practice%3A+Use+Environment+Variables+for+Authentication+Credentials
+https://www.npmjs.com/search?q=testcafe-browser-provider
 
 
 bradleys-mbp:my-angular-app anniehuang$ npm install testcafe --save-dev
 bradleys-mbp:my-angular-app anniehuang$ npm install testcafe-live --save-dev
 testcafe-live chrome d:\tests\example\example.js
-
+D:\Temp\my-angular-app>npm install testcafe-browser-provider-saucelabs --save-dev
 
 #################################
 When run in -L at the end:
@@ -31,4 +35,40 @@ You can use the following keys in the terminal:
 'Ctrl+W' - enables/disables watching files;
 'Ctrl+C' - quits live mode and closes the browsers.
 
+
+cross browser/devices test tools:
+-------------------------------------
+sauceLabs
+browser stack
+percy
+chromatic
+
+testcafe plugin:
+-----------------------
+testcafe-browser-provider-saucelabs         <<<
+testcafe-browser-provider-browserstack      <<<
+testcafe-browser-provider-puppeteer
+testcafe-browser-provider-crossbrowsertesting   <<<
+testcafe-browser-provider-sbx
+testcafe-browser-provider-selenium              <<<
+testcafe-browser-provider-electron              <<<
+testcafe-browser-provider-nightmare
+testcafe-browser-provider-fbsimctl
+testcafe-browser-provider-ievms
+@dgieselaar/testcafe-browser-provider-browserstack
+testcafe-browser-provider-puppeteer-hf
+
+generator-testcafe-browser-provider
+
+
+Error connecting to sourcelab:
+--------------------------------------------
+D:\Temp\my-angular-app>testcafe "saucelabs:Chrome@beta:Windows 10" ./testcafe-suite-mobile/sample.spec.js
+ERROR Error: Could not start Sauce Connect. Exit code 1 signal: null
+    at ChildProcess.<anonymous> (D:\Temp\my-angular-app\node_modules\sauce-connect-launcher\lib\sauce-connect-launcher.js:559:12)
+    at ChildProcess.emit (events.js:189:13)
+    at ChildProcess.EventEmitter.emit (domain.js:441:20)
+    at Process.ChildProcess._handle.onexit (internal/child_process.js:248:12)
+
+Type "testcafe -h" for help.
 
