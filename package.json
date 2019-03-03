@@ -7,7 +7,7 @@
     "build": "ng build",
     "test": "ng test",
     "testcafe": "testcafe chrome testcafe-suite/",
-    "testcafe-watch": "testcafe chrome ./testcafe-suite/radio-button-group.spec.ts -L",
+    "testcafe-watch": "testcafe chrome ./testcafe-suite/dropdown.spec.ts -L",
     "testcafe-live": "testcafe-live chrome ./testcafe-suite/textfield.spec.ts",
     "lint": "ng lint",
     "e2e": "ng e2e"
