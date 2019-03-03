@@ -7,7 +7,10 @@
     "build": "ng build",
     "test": "ng test",
     "testcafe": "testcafe chrome testcafe-suite/",
-    "testcafe-watch": "testcafe chrome ./testcafe-suite/button-group.spec.ts -L",
+    "testcafe-watch": "testcafe chrome ./testcafe-suite/responsive-design.spec.ts -L",
+    "testcafe-watch-mobile-headless": "testcafe 'chrome:headless:emulation:device=iphone X;cdpPort=9223' ./testcafe-suite-mobile/responsive-design.spec.ts -L",
+    "testcafe-watch-mobile": "testcafe 'chrome:emulation:device=iphone X' ./testcafe-suite-mobile/responsive-design.spec.ts -L",
+    "testcafe-local-browsers": "testcafe --list-browsers",
     "testcafe-live": "testcafe-live chrome ./testcafe-suite/textfield.spec.ts",
     "lint": "ng lint",
     "e2e": "ng e2e"

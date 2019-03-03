@@ -7,9 +7,11 @@ https://testcafe-discuss.devexpress.com/t/how-to-check-whether-an-element-is-vis
 https://devexpress.github.io/testcafe/documentation/test-api/assertions/
 https://devexpress.github.io/testcafe/documentation/test-api/assertions/assertion-api.html
 https://devexpress.github.io/testcafe/documentation/test-api/selecting-page-elements/examples-of-working-with-dom-elements.html
+https://github.com/DevExpress/testcafe/issues/2755
+
+
 
 bradleys-mbp:my-angular-app anniehuang$ npm install testcafe --save-dev
-
 bradleys-mbp:my-angular-app anniehuang$ npm install testcafe-live --save-dev
 testcafe-live chrome d:\tests\example\example.js
 
