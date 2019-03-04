@@ -1,6 +1,4 @@
 @import "ea-style/variables";
-@import "ea-style/mixins";
-
 
 .description1 {
   font-size: 25px;
@@ -12,65 +10,73 @@
 
 
 .test-font-300-class {
-  @include use-font(300);
+  font-weight: 300;
 }
 .test-font-500-class {
-  @include use-font();
+  font-weight: 500;
 }
 .test-font-700-class {
-  @include use-font(700);
+  font-weight: 700;
 }
 .test-font-900-class {
-  @include use-font(900);
+  font-weight: 900;
 }
 
 
 .test-font-300-italic-class {
-  @include use-font(300, 'italic');
+  font-weight: 300;
+  font-style: italic;
+
 }
 .test-font-500-italic-class {
-  @include use-font(500, 'italic');
+  font-weight: 500;
+  font-style: italic;
+
 }
 .test-font-700-italic-class {
-  @include use-font(700, 'italic');
+  font-weight: 700;
+  font-style: italic;
+
 }
 .test-font-900-italic-class {
-  @include use-font(900, 'italic');
+  font-weight: 900;
+  font-style: italic;
+
 }
 
 
 .test-desktop-h1-class {
-  @include use-font();
+  font-weight: 500;
   font-size: 44px;
   line-height: 1.4;
   color: $color-shadow-black;
 }
 .test-desktop-h2-class {
-  @include use-font(700);
+  font-weight: 700;
   font-size: 30px;
   line-height: 1.4;
   color: $color-shadow-black;
 }
 .test-desktop-h3-class {
-  @include use-font(700);
+  font-weight: 700;
   font-size: 25px;
   line-height: 1.4;
   color: $color-shadow-black;
 }
 .test-desktop-h4-class {
-  @include use-font(700);
+  font-weight: 700;
   font-size: 20px;
   line-height: 1.4;
   color: $color-shadow-black;
 }
 .test-desktop-body-class {
-  @include use-font(300);
+  font-weight: 300;
   font-size: 16px;
   line-height: 1.625;
   color: $color-shadow-black;
 }
 .test-desktop-disclaimer-class {
-  @include use-font(300);
+  font-weight: 300;
   font-size: 13px;
   line-height: 1.4;
   color: $color-shadow-black;

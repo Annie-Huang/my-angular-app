@@ -1,9 +1,8 @@
 @import "ea-style/variables";
-@import "ea-style/mixins";
 
 .test-p-class {
   color: $color-bruised-violet;
-  @include use-font(900);
+  font-weight: 900;
 }
 
 .test-palette-class {
