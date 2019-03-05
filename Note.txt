@@ -23,6 +23,18 @@ bradleys-mbp:my-angular-app anniehuang$ ./node_modules/.bin/tslint -c tslint.jso
 
 
 
+cypress.json:
+{
+  "baseUrl": "http://localhost:4201"
+}
+{
+  "baseUrl": "https://preprod.internal.digital.energyaustralia.com.au/ea-component-library"
+}
+  "env": {
+    "http_proxy": "https://s3-ap-southeast-2.amazonaws.com/preprod.nonprod.digital.energyaustralia.com.au/shineeaproxy.pac",
+    "https_proxy": "https://s3-ap-southeast-2.amazonaws.com/preprod.nonprod.digital.energyaustralia.com.au/shineeaproxy.pac"
+  }
+}
 
 
 

@@ -8,7 +8,8 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e --port 4202",
-    "cy-open": "concurrently \"ng serve --port 4201\" \"cypress open\"",
+    "cy-open-old": "concurrently \"ng serve --port 4201\" \"cypress open\"",
+    "cy-open": "cypress open",
     "cy-run": "cypress run --config integrationFolder=cypress/integration/ea-ui",
     "cy-run-browser": "cypress run --config integrationFolder=cypress/integration/ea-ui --browser chrome"
   },
