@@ -7,6 +7,7 @@
     "build": "ng build",
     "test": "ng test",
     "testcafe": "testcafe chrome testcafe-suite/",
+    "testcafe1": "testcafe 'chrome:emulation:device=iphone X' testcafe-suite-mobile/",
     "testcafe-watch": "testcafe chrome ./testcafe-suite/responsive-design.spec.ts -L",
     "testcafe-mobile-headless": "testcafe 'chrome:headless:emulation:device=iphone X;cdpPort=9223' ./testcafe-suite-mobile/responsive-design.spec.ts -L",
     "testcafe-mobile-chrome-emulator": "testcafe 'chrome:emulation:device=iphone X' ./testcafe-suite-mobile/responsive-design.spec.ts -L",
