@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { MessageService } from '@ea/ea-ui';
 
 @Component({
   selector: 'app-home',
@@ -8,12 +9,16 @@ import { Component, OnInit } from '@angular/core';
 export class HomeComponent implements OnInit {
   shouldShowSpinner = true;
 
-  constructor() { }
+  constructor(private messageService: MessageService) { }
 
   ngOnInit() {
   }
 
   handleClick(event) {
+  }
+
+  showMessage(severity: string)  {
+    this.messageService.add( {severity: severity, detail: `this is a ${severity} message.`, position: 'message-custom-location' });
   }
 
 }

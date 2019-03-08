@@ -4,7 +4,7 @@ import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 
 import { BrowserModule } from '@angular/platform-browser';
 
-import { ButtonModule, FooModule, EuiFormsModule, TextfieldModule, SpinnerModule, ModalModule } from '@ea/ea-ui';
+import { ButtonModule, FooModule, EuiFormsModule, TextfieldModule, SpinnerModule, ModalModule, MessageModule, MessageService} from '@ea/ea-ui';
 import { AppRoutingModule } from './app-routing.module';
 
 import { AppComponent } from './app.component';
@@ -33,9 +33,10 @@ import { ModalComponent } from './modal/modal.component';
     TextfieldModule,
     SpinnerModule,
     ModalModule,
+    MessageModule,
     BrowserAnimationsModule
   ],
-  providers: [],
+  providers: [MessageService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
