@@ -23,7 +23,6 @@
     "@angular/router": "~7.0.0",
     "@ea/ea-ui": "file:../ea-component-library/dist/ea-ui/ea-ea-ui-0.27.0.tgz",
     "core-js": "^2.5.4",
-    "install": "^0.12.2",
     "npm": "^6.5.0",
     "primeicons": "^1.0.0",
     "primeng": "^7.0.3",
