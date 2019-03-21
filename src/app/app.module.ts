@@ -13,6 +13,7 @@ import { TextfieldTestComponent } from './textfield-test/textfield-test.componen
 import { TestcompComponent } from './testcomp/testcomp.component';
 import { TypographyTestComponent } from './typography-test/typography-test.component';
 import { ModalComponent } from './modal/modal.component';
+import { DropdownTestComponent } from './dropdown-test/dropdown-test.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { ModalComponent } from './modal/modal.component';
     TestcompComponent,
     HomeComponent,
     TextfieldTestComponent,
-    ModalComponent
+    ModalComponent,
+    DropdownTestComponent
   ],
   imports: [
     BrowserModule,
