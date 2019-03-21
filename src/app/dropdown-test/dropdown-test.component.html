@@ -1,3 +1,21 @@
-<p>
-  dropdown-test works!
-</p>
+<form euiForm [formGroup]="form">
+  <div class="ea-form-group">
+    <label>My option</label>
+    <eui-dropdown
+      name="my-option-field"
+      placeholder="Please select a value"
+      [options]="demoOptions"
+      [formControl]="myOption"
+      [customErrors]="{'required': 'Please choose an option'}">
+    </eui-dropdown>
+  </div>
+
+  <button
+    type="submit"
+    class="ea-button ea-button--primary"
+    (click)="onSubmit()">Submit</button>
+  <p>Form value: {{ form.value | json }}</p>
+  <p>Form status: {{ form.status }}</p>
+  <p>{{ success }}</p>
+
+</form>

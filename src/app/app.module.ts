@@ -4,7 +4,7 @@ import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 
 import { BrowserModule } from '@angular/platform-browser';
 
-import { ButtonModule, FooModule, EuiFormsModule, TextfieldModule, SpinnerModule, ModalModule, MessageModule, MessageService} from '@ea/ea-ui';
+import { ButtonModule, FooModule, EuiFormsModule, TextfieldModule, SpinnerModule, ModalModule, MessageModule, MessageService, DropdownModule} from '@ea/ea-ui';
 import { AppRoutingModule } from './app-routing.module';
 
 import { AppComponent } from './app.component';
@@ -36,7 +36,8 @@ import { DropdownTestComponent } from './dropdown-test/dropdown-test.component';
     SpinnerModule,
     ModalModule,
     MessageModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    DropdownModule
   ],
   providers: [MessageService],
   bootstrap: [AppComponent]
