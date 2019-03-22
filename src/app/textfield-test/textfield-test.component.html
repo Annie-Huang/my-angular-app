@@ -1,8 +1,6 @@
 <form euiForm [formGroup]="form">
   <div class="ea-form-group">
-    <label for="account-name-field" class="required">
-      Name
-    </label>
+    <label for="account-name-field">Name</label>
     <eui-textfield
       name="account-name-field"
       [formControl]="accountName"
@@ -11,9 +9,7 @@
   </div>
 
   <div class="ea-form-group">
-    <label for="postcode-field" class="required">
-      Please enter your postcode
-    </label>
+    <label for="postcode-field">Please enter your postcode</label>
     <eui-textfield
       name="postcode-field"
       placeholder="eg 3000"

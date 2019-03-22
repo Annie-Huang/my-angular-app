@@ -24,7 +24,8 @@ export class TextfieldTestComponent implements OnInit {
     this.createForm();
   }
 
-  onChange($event) {
+  onChange(value) {
+    console.log('new value', value);
   }
 
   createForm() {
