@@ -1,3 +1,20 @@
-<p>
-  buttongroup-test works!
-</p>
+<form euiForm [formGroup]="form">
+  <div class="ea-form-group">
+    <label>Fuel type</label>
+    <eui-button-group
+      name="fuel-type-field"
+      [options]="threeOptions"
+      [formControl]="fuelType"
+      [customErrors]="{'required': 'Please choose your fuel type'}">
+    </eui-button-group>
+  </div>
+
+  <button
+    type="submit"
+    class="ea-button ea-button--primary"
+    (click)="onSubmit()">Submit</button>
+
+  <p>Form value: {{ form.value | json }}</p>
+  <p>Form status: {{ form.status }}</p>
+  <p>{{ success }}</p>
+</form>
