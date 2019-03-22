@@ -1,3 +1,21 @@
-<p>
-  radiobutton-test works!
-</p>
+<form euiForm [formGroup]="form">
+  <div class="ea-form-group">
+    <label>Is device installed and active?</label>
+    <eui-radio-button-group
+      name="device-installed"
+      [options]="twoOptions"
+      [inline]="true"
+      [formControl]="deviceInstalled"
+      [customErrors]="{'required': 'Please choose a value'}">
+    </eui-radio-button-group>
+  </div>
+
+  <button
+    type="submit"
+    class="ea-button ea-button--primary"
+    (click)="onSubmit()">Submit</button>
+  <p>Form value: {{ form.value | json }}</p>
+  <p>Form status: {{ form.status }}</p>
+  <p>{{ success }}</p>
+
+</form>
