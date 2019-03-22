@@ -1,3 +1,21 @@
-<p>
-  textarea-test works!
-</p>
+<form euiForm [formGroup]="form">
+  <div class="ea-form-group">
+    <label for="introduction-field">Please add your introduction</label>
+    <eui-textarea
+      name="introduction-field"
+      rows="5"
+      placeholder="Introduce yourself"
+      [formControl]="introduction"
+      [customErrors]="{'required': 'Please add introduction'}">
+    </eui-textarea>
+  </div>
+
+  <button
+    type="submit"
+    class="ea-button ea-button--primary"
+    (click)="onSubmit()">Submit</button>
+  <p>Form value: {{ form.value | json }}</p>
+  <p>Form status: {{ form.status }}</p>
+  <p>{{ success }}</p>
+
+</form>
