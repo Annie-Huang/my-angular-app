@@ -14,6 +14,7 @@ import { TestcompComponent } from './testcomp/testcomp.component';
 import { TypographyTestComponent } from './typography-test/typography-test.component';
 import { ModalComponent } from './modal/modal.component';
 import { DropdownTestComponent } from './dropdown-test/dropdown-test.component';
+import { RadiobuttonTestComponent } from './radiobutton-test/radiobutton-test.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { DropdownTestComponent } from './dropdown-test/dropdown-test.component';
     HomeComponent,
     TextfieldTestComponent,
     ModalComponent,
-    DropdownTestComponent
+    DropdownTestComponent,
+    RadiobuttonTestComponent
   ],
   imports: [
     BrowserModule,
