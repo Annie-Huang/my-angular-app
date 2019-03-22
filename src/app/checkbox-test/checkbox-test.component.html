@@ -1,3 +1,20 @@
-<p>
-  checkbox-test works!
-</p>
+<form euiForm [formGroup]="form">
+  <div class="ea-form-group">
+    <eui-checkbox
+      name="terms-and-conditions-field"
+      [formControl]="termsAndConditions"
+      [customErrors]="{'required': 'Please confirm you have read the terms and conditions'}">
+      <label for="terms-and-conditions-field" ea-checkbox__label>my label</label>
+    </eui-checkbox>
+  </div>
+
+  <button
+    type="submit"
+    class="ea-button ea-button--primary"
+    (click)="onSubmit()">Submit
+  </button>
+  <p>Form value: {{ form.value | json }}</p>
+  <p>Form status: {{ form.status }}</p>
+  <p>{{ success }}</p>
+</form>
+
