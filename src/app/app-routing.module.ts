@@ -8,6 +8,7 @@ import {ModalComponent} from './modal/modal.component';
 import {DropdownTestComponent} from './dropdown-test/dropdown-test.component';
 import {RadiobuttonTestComponent} from './radiobutton-test/radiobutton-test.component';
 import {TextareaTestComponent} from './textarea-test/textarea-test.component';
+import {ButtongroupTestComponent} from './buttongroup-test/buttongroup-test.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
@@ -15,6 +16,7 @@ const routes: Routes = [
   { path: 'textarea', component: TextareaTestComponent },
   { path: 'dropdown', component: DropdownTestComponent },
   { path: 'radiobutton', component: RadiobuttonTestComponent },
+  { path: 'buttongroup', component: ButtongroupTestComponent },
   { path: 'modal', component: ModalComponent },
   { path: 'typographic', component: TypographyTestComponent }
 ];

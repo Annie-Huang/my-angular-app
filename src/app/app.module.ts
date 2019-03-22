@@ -16,6 +16,7 @@ import { ModalComponent } from './modal/modal.component';
 import { DropdownTestComponent } from './dropdown-test/dropdown-test.component';
 import { RadiobuttonTestComponent } from './radiobutton-test/radiobutton-test.component';
 import { TextareaTestComponent } from './textarea-test/textarea-test.component';
+import { ButtongroupTestComponent } from './buttongroup-test/buttongroup-test.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,8 @@ import { TextareaTestComponent } from './textarea-test/textarea-test.component';
     ModalComponent,
     DropdownTestComponent,
     RadiobuttonTestComponent,
-    TextareaTestComponent
+    TextareaTestComponent,
+    ButtongroupTestComponent
   ],
   imports: [
     BrowserModule,
