@@ -16,6 +16,10 @@
     "testcafe-local-browsers": "testcafe --list-browsers",
     "testcafe-saucelabs-browsers": "testcafe -b saucelabs",
     "testcafe-live": "testcafe-live chrome ./testcafe-suite/textfield.spec.ts",
+    "tc-watch": "testcafe chrome testcafe-suite/textfield.spec.ts -L",
+    "tc-chrome": "testcafe chrome testcafe-suite",
+    "tc-all": "testcafe chrome,'chrome:emulation:device=Galaxy S5','chrome:emulation:device=iphone X' testcafe-suite",
+    "tc-all-headless": "testcafe 'chrome:headless','chrome:headless:emulation:device=iphone X','chrome:headless:emulation:device=Galaxy S5' testcafe-suite",
     "lint": "ng lint",
     "e2e": "ng e2e"
   },

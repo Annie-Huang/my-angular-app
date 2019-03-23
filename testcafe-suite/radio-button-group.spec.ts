@@ -1,22 +1,22 @@
-import { Selector } from 'testcafe';
+import {Selector} from 'testcafe';
+
 const firstRadioButton = Selector('form').find('label').withText('Yes');
 const submitButton = Selector('button').withText('Submit');
+const errors = Selector('eui-field-errors');
 
-fixture('Getting Started')
+fixture('Radio button group')
   .page('http://localhost:4200/#/radiobuttongroup');
 
-test('Submit with choose a radio button', async t => {
+test('Form submission with choose a radio button', async t => {
   await t
     .click(firstRadioButton)
     .click(submitButton)
     .expect(Selector('p').withText('"deviceInstalled": "yes"').exists).ok()
-    .expect(Selector('eui-field-errors').exists).notOk()
-  ;
+    .expect(errors.exists).notOk();
 });
 
-test('Submit without enter textarea info', async t => {
+test('Form submission without choose a radio button', async t => {
   await t
     .click(submitButton)
-    .expect(Selector('eui-field-errors').find('div').withText('Please choose a value').exists).ok()
-  ;
+    .expect(errors.find('div').withText('Please choose a value').exists).ok();
 });

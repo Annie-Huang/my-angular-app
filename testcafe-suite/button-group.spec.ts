@@ -1,22 +1,23 @@
-import { Selector } from 'testcafe';
+import {Selector} from 'testcafe';
+
 const firstButtonGroupOption = Selector('form').find('label').withText('Electricity and Gas');
 const submitButton = Selector('button').withText('Submit');
+const errors = Selector('eui-field-errors');
 
-fixture('Getting Started')
+
+fixture('Button group')
   .page('http://localhost:4200/#/buttongroup');
 
-test('Submit with choose a dropdown option', async t => {
+test('Form submission with choose choose a button in button group', async t => {
   await t
     .click(firstButtonGroupOption)
     .click(submitButton)
     .expect(Selector('p').withText('"fuelType": "BOTH"').exists).ok()
-    .expect(Selector('eui-field-errors').exists).notOk()
-  ;
+    .expect(errors.exists).notOk();
 });
 
-test('Submit without choose a button in button group', async t => {
+test('Form submission without choose a button in button group', async t => {
   await t
     .click(submitButton)
-    .expect(Selector('eui-field-errors').find('div').withText('Please choose your fuel type').exists).ok()
-  ;
+    .expect(errors.find('div').withText('Please choose your fuel type').exists).ok();
 });
