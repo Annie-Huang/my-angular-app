@@ -4,7 +4,7 @@ import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 
 import { BrowserModule } from '@angular/platform-browser';
 
-import { ButtonModule, FooModule, EuiFormsModule, TextfieldModule, SpinnerModule, ModalModule, MessageModule, MessageService,
+import { ButtonModule, EuiFormsModule, TextfieldModule, SpinnerModule, ModalModule, MessageModule, MessageService,
   DropdownModule, RadioButtonGroupModule, ButtonGroupModule, TextareaModule, CheckboxModule} from '@ea/ea-ui';
 import { AppRoutingModule } from './app-routing.module';
 
@@ -38,7 +38,6 @@ import { CheckboxTestComponent } from './checkbox-test/checkbox-test.component';
     BrowserModule,
     AppRoutingModule,
     ButtonModule,
-    FooModule,
     ReactiveFormsModule,
     EuiFormsModule,
     TextfieldModule,
