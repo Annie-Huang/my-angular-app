@@ -1,3 +1,10 @@
-<p>
-  autocomplete-test works!
-</p>
+<h3>Dynamic suggestions</h3>
+<label for="autocomplete-dynamic">Postcode/Suburb</label>
+<eui-textfield
+  name="autocomplete-dynamic"
+  (valueChange)="filterValues($event)"
+  autocomplete="postal-code"
+  [euiAutoComplete]="autoDynamic">
+  <eui-autocomplete #autoDynamic name="autocomplete-dynamic" [options]="filteredValues$ | async">
+  </eui-autocomplete>
+</eui-textfield>

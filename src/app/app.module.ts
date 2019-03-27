@@ -5,7 +5,7 @@ import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { ButtonModule, EuiFormsModule, TextfieldModule, SpinnerModule, ModalModule, MessageModule, MessageService,
-  DropdownModule, RadioButtonGroupModule, ButtonGroupModule, TextareaModule, CheckboxModule} from '@ea/ea-ui';
+  DropdownModule, RadioButtonGroupModule, ButtonGroupModule, TextareaModule, CheckboxModule, AutoCompleteModule} from '@ea/ea-ui';
 import { AppRoutingModule } from './app-routing.module';
 
 import { AppComponent } from './app.component';
@@ -51,7 +51,8 @@ import { AutocompleteTestComponent } from './autocomplete-test/autocomplete-test
     RadioButtonGroupModule,
     ButtonGroupModule,
     TextareaModule,
-    CheckboxModule
+    CheckboxModule,
+    AutoCompleteModule
   ],
   providers: [MessageService],
   bootstrap: [AppComponent]
