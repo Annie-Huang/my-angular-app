@@ -19,6 +19,7 @@ import { RadiobuttonTestComponent } from './radiobutton-test/radiobutton-test.co
 import { TextareaTestComponent } from './textarea-test/textarea-test.component';
 import { ButtongroupTestComponent } from './buttongroup-test/buttongroup-test.component';
 import { CheckboxTestComponent } from './checkbox-test/checkbox-test.component';
+import { AutocompleteTestComponent } from './autocomplete-test/autocomplete-test.component';
 
 @NgModule({
   declarations: [
@@ -32,7 +33,8 @@ import { CheckboxTestComponent } from './checkbox-test/checkbox-test.component';
     RadiobuttonTestComponent,
     TextareaTestComponent,
     ButtongroupTestComponent,
-    CheckboxTestComponent
+    CheckboxTestComponent,
+    AutocompleteTestComponent
   ],
   imports: [
     BrowserModule,

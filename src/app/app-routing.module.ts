@@ -10,6 +10,7 @@ import {RadiobuttonTestComponent} from './radiobutton-test/radiobutton-test.comp
 import {TextareaTestComponent} from './textarea-test/textarea-test.component';
 import {ButtongroupTestComponent} from './buttongroup-test/buttongroup-test.component';
 import {CheckboxTestComponent} from './checkbox-test/checkbox-test.component';
+import {AutocompleteTestComponent} from './autocomplete-test/autocomplete-test.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
@@ -20,6 +21,7 @@ const routes: Routes = [
   { path: 'buttongroup', component: ButtongroupTestComponent },
   { path: 'checkbox', component: CheckboxTestComponent },
   { path: 'modal', component: ModalComponent },
+  { path: 'autocomplete', component: AutocompleteTestComponent },
   { path: 'typographic', component: TypographyTestComponent }
 ];
 
