@@ -1,0 +1,30 @@
+<form euiForm [formGroup]="form">
+  <div class="ea-form-group">
+    <label for="account-name-field">Name</label>
+    <eui-textfield
+      name="account-name-field"
+      [formControl]="accountName"
+      [customErrors]="{'required': 'Please enter a name', 'pattern': 'Postcode must contain 4 digits'}">
+    </eui-textfield>
+  </div>
+
+  <div class="ea-form-group">
+    <label for="postcode-field">Please enter your postcode</label>
+    <eui-textfield
+      name="postcode-field"
+      placeholder="eg 3000"
+      maxLength="4"
+      [formControl]="postcode"
+      [customErrors]="{'required': 'You must enter a  postcode', 'pattern': 'Postcode must contain 4 digits'}">
+    </eui-textfield>
+  </div>
+
+  <button
+    type="submit"
+    class="ea-button ea-button--primary"
+    (click)="onSubmit()">Submit</button>
+  <p>Form value: {{ form.value | json }}</p>
+  <p>Form status: {{ form.status }}</p>
+  <p>{{ success }}</p>
+
+</form>
