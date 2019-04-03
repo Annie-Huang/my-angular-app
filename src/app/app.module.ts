@@ -7,20 +7,23 @@ import { HomeComponent } from './home/home.component';
 import { TextfieldTestComponent } from './textfield-test/textfield-test.component';
 
 import { ReactiveFormsModule } from '@angular/forms';
-import { TextfieldModule, EuiFormsModule } from '@ea/ea-ui';
+import { TextfieldModule, EuiFormsModule, FooModule } from '@ea/ea-ui';
+import { FooComponent } from './foo/foo.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
-    TextfieldTestComponent
+    TextfieldTestComponent,
+    FooComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     ReactiveFormsModule,
     EuiFormsModule,
-    TextfieldModule
+    TextfieldModule,
+    FooModule
   ],
   providers: [],
   bootstrap: [AppComponent]
