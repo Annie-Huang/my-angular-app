@@ -1,0 +1,35 @@
+<h3 class="first">Example 1: Template driven + <code>errorVisible</code></h3>
+<form #form1="ngForm" (ngSubmit)="onForm1Submit(form1)">
+  <div class="ea-form-group">
+    <label for="form1-account-name">Account Name</label>
+    <eui-textfield
+      name="form1-account-name"
+      [(ngModel)]="form1AccountNumber"
+      [errorVisible]="form1ErrorVisible"
+      required></eui-textfield>
+  </div>
+  <div class="ea-form-group">
+    <label for="form1-postcode">Postcode</label>
+    <eui-textfield
+      name="form1-postcode"
+      placeholder="eg 3000"
+      [(ngModel)]="form1Postcode"
+      [errorVisible]="form1ErrorVisible"
+      [customErrors]="{'required': 'Please enter a postcode', 'pattern': 'Postcode must contain 4 digits'}"
+      maxLength="4"
+      required
+      pattern="^[0-9]{4}$">
+    </eui-textfield>
+  </div>
+  <button
+    type="submit"
+    class="ea-button ea-button--primary">Submit</button>
+  <button
+    type="reset"
+    class="ea-button ea-button--primary"
+    (click)="onForm1Reset(form1)">Reset</button>
+  <p>form1ErrorVisible value: {{ form1ErrorVisible }}</p>
+  <p>Form 1 values: {{ form1Values | json }}</p>
+  <p>Form 1 status: {{ form1Status }}</p>
+  <p>{{ form1Success }}</p>
+</form>

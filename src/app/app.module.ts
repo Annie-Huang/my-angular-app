@@ -1,5 +1,5 @@
 import { NgModule } from '@angular/core';
-import { ReactiveFormsModule } from '@angular/forms';
+import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 
 import { BrowserModule } from '@angular/platform-browser';
@@ -20,6 +20,7 @@ import { TextareaTestComponent } from './textarea-test/textarea-test.component';
 import { ButtongroupTestComponent } from './buttongroup-test/buttongroup-test.component';
 import { CheckboxTestComponent } from './checkbox-test/checkbox-test.component';
 import { AutocompleteTestComponent } from './autocomplete-test/autocomplete-test.component';
+import { Fielderror1TestComponent } from './fielderror1-test/fielderror1-test.component';
 
 @NgModule({
   declarations: [
@@ -34,12 +35,14 @@ import { AutocompleteTestComponent } from './autocomplete-test/autocomplete-test
     TextareaTestComponent,
     ButtongroupTestComponent,
     CheckboxTestComponent,
-    AutocompleteTestComponent
+    AutocompleteTestComponent,
+    Fielderror1TestComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     ButtonModule,
+    FormsModule,
     ReactiveFormsModule,
     EuiFormsModule,
     TextfieldModule,
