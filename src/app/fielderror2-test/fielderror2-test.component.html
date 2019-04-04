@@ -1,3 +1,32 @@
-<p>
-  fielderror2-test works!
-</p>
+<h3>Example 2: Template driven + <code>euiForm</code> (form submit event)</h3>
+<form euiForm #form2="ngForm" (ngSubmit)="onForm2Submit(form2)">
+  <div class="ea-form-group">
+    <label for="form2-account-name">Account Name</label>
+    <eui-textfield
+      name="form2-account-name"
+      [(ngModel)]="form2AccountNumber"
+      required></eui-textfield>
+  </div>
+  <div class="ea-form-group">
+    <label for="form2-postcode">Postcode</label>
+    <eui-textfield
+      name="form2-postcode"
+      placeholder="eg 3000"
+      [(ngModel)]="form2Postcode"
+      [customErrors]="{'required': 'Please enter a postcode', 'pattern': 'Postcode must contain 4 digits'}"
+      maxLength="4"
+      required
+      pattern="^[0-9]{4}$">
+    </eui-textfield>
+  </div>
+  <button
+    type="submit"
+    class="ea-button ea-button--primary">Submit</button>
+  <button
+    type="reset"
+    class="ea-button ea-button--primary"
+    (click)="onForm2Reset(form2)">Reset</button>
+  <p>Form 2 values: {{ form2Values | json }}</p>
+  <p>Form 2 status: {{ form2Status }}</p>
+  <p>{{ form2Success }}</p>
+</form>
