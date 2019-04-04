@@ -1,5 +1,5 @@
-import {AfterViewInit, Component, OnInit, QueryList, ViewChildren} from '@angular/core';
-import {FormBuilder, FormGroup, NgForm, NgModel, Validators} from '@angular/forms';
+import {Component, OnInit, QueryList, ViewChildren} from '@angular/core';
+import {FormBuilder, NgForm, NgModel} from '@angular/forms';
 import {EuiFormDirective} from '@ea/ea-ui';
 
 
