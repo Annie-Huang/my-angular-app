@@ -1,0 +1,9 @@
+<label for="form3-account-postcode">Postcode</label>
+<eui-textfield
+  name="form3-account-postcode"
+  placeholder="eg 3000"
+  maxLength="4"
+  [formControl]="form3.controls['form3Postcode']"
+  [errorVisible]="form3ErrorVisible"
+  [customErrors]="{'required': 'Please enter a postcode', 'pattern': 'Postcode must contain 4 digits'}">
+</eui-textfield>

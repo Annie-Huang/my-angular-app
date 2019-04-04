@@ -1,0 +1,30 @@
+<h3>Example 3: Reactive form + <code>errorVisible</code> + child component</h3>
+<form [formGroup]="form3">
+  <div class="ea-form-group">
+    <label for="form3-account-name">Account Name</label>
+    <eui-textfield
+      name="form3-account-name"
+      formControlName="form3AccountName"
+      [errorVisible]="form3ErrorVisible"
+      [customErrors]="{'required': 'Please enter a name', 'pattern': 'Postcode must contain 4 digits'}">
+    </eui-textfield>
+  </div>
+
+  <div class="ea-form-group">
+    <app-form3-child
+      [form3]="form3"
+      [form3ErrorVisible]="form3ErrorVisible"></app-form3-child>
+  </div>
+
+  <button
+    type="submit"
+    class="ea-button ea-button--primary"
+    (click)="onForm3Submit()">Submit</button>
+  <button
+    type="reset"
+    class="ea-button ea-button--primary"
+    (click)="onForm3Reset()">Reset</button>
+  <p>Form 3 values: {{ form3.value | json }}</p>
+  <p>Form 3 status: {{ form3.status }}</p>
+  <p>{{ form3Success }}</p>
+</form>

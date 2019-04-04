@@ -13,6 +13,7 @@ import {CheckboxTestComponent} from './checkbox-test/checkbox-test.component';
 import {AutocompleteTestComponent} from './autocomplete-test/autocomplete-test.component';
 import {Fielderror1TestComponent} from './fielderror1-test/fielderror1-test.component';
 import {Fielderror2TestComponent} from './fielderror2-test/fielderror2-test.component';
+import {Fielderror3TestComponent} from './fielderror3-test/fielderror3-test.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
@@ -26,7 +27,8 @@ const routes: Routes = [
   { path: 'autocomplete', component: AutocompleteTestComponent },
   { path: 'typographic', component: TypographyTestComponent },
   { path: 'fielderror1', component: Fielderror1TestComponent },
-  { path: 'fielderror2', component: Fielderror2TestComponent }
+  { path: 'fielderror2', component: Fielderror2TestComponent },
+  { path: 'fielderror3', component: Fielderror3TestComponent }
 ];
 
 @NgModule({
