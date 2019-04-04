@@ -24,6 +24,8 @@ import { Fielderror1TestComponent } from './fielderror1-test/fielderror1-test.co
 import { Fielderror2TestComponent } from './fielderror2-test/fielderror2-test.component';
 import { Fielderror3TestComponent } from './fielderror3-test/fielderror3-test.component';
 import { Form3ChildComponent } from './fielderror3-test/form3-child.component';
+import { Fielderror4TestComponent } from './fielderror4-test/fielderror4-test.component';
+import { Form4ChildComponent } from './fielderror4-test/form4-child.component';
 
 @NgModule({
   declarations: [
@@ -43,7 +45,9 @@ import { Form3ChildComponent } from './fielderror3-test/form3-child.component';
     Fielderror2TestComponent,
     Fielderror3TestComponent,
     Fielderror3TestComponent,
-    Form3ChildComponent
+    Form3ChildComponent,
+    Fielderror4TestComponent,
+    Form4ChildComponent
   ],
   imports: [
     BrowserModule,

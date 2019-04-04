@@ -1,0 +1,28 @@
+<h3>Example 4: Reactive form + <code>euiForm</code> (form submit event) + child component</h3>
+<form euiForm [formGroup]="form4">
+  <div class="ea-form-group">
+    <label for="form4-account-name">Account Name</label>
+    <eui-textfield
+      name="form4-account-name"
+      formControlName="form4AccountName"
+      [customErrors]="{'required': 'Please enter a name', 'pattern': 'Postcode must contain 4 digits'}">
+    </eui-textfield>
+  </div>
+
+  <div class="ea-form-group">
+    <app-form4-child
+      [form4]="form4"></app-form4-child>
+  </div>
+
+  <button
+    type="submit"
+    class="ea-button ea-button--primary"
+    (click)="onForm4Submit()">Submit</button>
+  <button
+    type="reset"
+    class="ea-button ea-button--primary"
+    (click)="onForm4Reset()">Reset</button>
+  <p>Form 4 values: {{ form4.value | json }}</p>
+  <p>Form 4 status: {{ form4.status }}</p>
+  <p>{{ form4Success }}</p>
+</form>

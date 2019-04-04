@@ -1,0 +1,10 @@
+<div class="ea-form-group">
+  <label for="form4-account-postcode">Postcode</label>
+  <eui-textfield
+    name="form4-account-postcode"
+    placeholder="eg 3000"
+    maxLength="4"
+    [formControl]="form4.controls['form4Postcode']"
+    [customErrors]="{'required': 'Please enter a postcode', 'pattern': 'Postcode must contain 4 digits'}">
+  </eui-textfield>
+</div>
