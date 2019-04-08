@@ -23,7 +23,9 @@ export class Fielderror4TestComponent implements OnInit, AfterViewInit {
 
   ngAfterViewInit() {
     this.euiFormDirectives.forEach((item, index) => {
-      if (index === 1) {
+      // // It got 1 in the demo page because we have multiple 'euiForm' in the in the demo page.
+      // else if (index === 1) {
+      if (index === 0) {
         this.form4EuiFormDirective = item;
       }
     });
