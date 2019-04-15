@@ -4,7 +4,7 @@ import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 
 import { BrowserModule } from '@angular/platform-browser';
 
-import { ButtonModule, EuiFormsModule, TextfieldModule, SpinnerModule, ModalModule, MessageModule, MessageService,
+import { EuiFormsModule, TextfieldModule, SpinnerModule, ModalModule, MessageModule, MessageService,
   DropdownModule, RadioButtonGroupModule, ButtonGroupModule, TextareaModule, CheckboxModule, AutoCompleteModule} from '@ea/ea-ui';
 import { AppRoutingModule } from './app-routing.module';
 
@@ -52,7 +52,6 @@ import { Form4ChildComponent } from './fielderror4-test/form4-child.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    ButtonModule,
     FormsModule,
     ReactiveFormsModule,
     EuiFormsModule,
