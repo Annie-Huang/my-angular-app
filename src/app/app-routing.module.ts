@@ -15,6 +15,7 @@ import {Fielderror1TestComponent} from './fielderror1-test/fielderror1-test.comp
 import {Fielderror2TestComponent} from './fielderror2-test/fielderror2-test.component';
 import {Fielderror3TestComponent} from './fielderror3-test/fielderror3-test.component';
 import {Fielderror4TestComponent} from './fielderror4-test/fielderror4-test.component';
+import {AccordionTestComponent} from './accordion-test/accordion-test.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
@@ -30,7 +31,8 @@ const routes: Routes = [
   { path: 'fielderror1', component: Fielderror1TestComponent },
   { path: 'fielderror2', component: Fielderror2TestComponent },
   { path: 'fielderror3', component: Fielderror3TestComponent },
-  { path: 'fielderror4', component: Fielderror4TestComponent }
+  { path: 'fielderror4', component: Fielderror4TestComponent },
+  { path: 'accordion', component: AccordionTestComponent }
 ];
 
 @NgModule({

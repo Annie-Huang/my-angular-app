@@ -1,0 +1,23 @@
+<div class="content-section implementation ea-form-group">
+  <h3 class="first">Single accordion</h3>
+  <eui-accordion>
+    <eui-accordion-header>
+      This is header
+    </eui-accordion-header>
+    <eui-accordion-content>
+      This is content
+    </eui-accordion-content>
+  </eui-accordion>
+</div>
+
+<div class="content-section implementation ea-form-group">
+  <h3 class="first">Multiple accordion</h3>
+  <eui-accordion *ngFor="let item of items; first as isFirst" [expanded]="isFirst">
+    <eui-accordion-header>
+      {{item.id}}
+    </eui-accordion-header>
+    <eui-accordion-content>
+      {{item.text}}
+    </eui-accordion-content>
+  </eui-accordion>
+</div>
