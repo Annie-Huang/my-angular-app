@@ -14,11 +14,15 @@ export class TextfieldTestComponent implements OnInit {
     return this.form.get('accountName');
   }
 
+  get accountExpiry(): AbstractControl {
+    return this.form.get('accountExpiry');
+  }
+
   get postcode(): AbstractControl {
     return this.form.get('postcode');
   }
 
-  constructor(private fb: FormBuilder) { }
+  constructor(private readonly fb: FormBuilder) { }
 
   ngOnInit() {
     this.createForm();
@@ -31,7 +35,8 @@ export class TextfieldTestComponent implements OnInit {
   createForm() {
     this.form = this.fb.group({
       accountName: [null, [Validators.required]],
-      postcode: [null, [Validators.required, Validators.pattern(/^[0-9]{4}$/)]]
+      postcode: [null, [Validators.required, Validators.pattern(/^[0-9]{4}$/)]],
+      accountExpiry: [null, [Validators.required, Validators.pattern(/^(((0)[0-9])|((1)[0-2]))( \/ )\d{2}$/)]]
     });
   }
 

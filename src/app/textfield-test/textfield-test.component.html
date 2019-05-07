@@ -1,3 +1,15 @@
+<h3>Input Mask</h3>
+<label for="textfield-field-date">Label</label>
+<eui-textfield
+  name="textfield-field-date"
+  placeholder="MM / YY"
+  mask="00 / 00">
+</eui-textfield>
+
+<h3>Reactive form example</h3>
+<p>Validation rule of the account number field is 'required'. <br>
+  Validation rules of the postcode field is 'required' and 4 digits. Click the submit button directly to see the error message.</p>
+
 <form euiForm [formGroup]="form">
   <div class="ea-form-group">
     <label for="account-name-field">Name</label>
@@ -5,6 +17,20 @@
       name="account-name-field"
       [formControl]="accountName"
       [customErrors]="{'required': 'Please enter a name', 'pattern': 'Postcode must contain 4 digits'}">
+    </eui-textfield>
+  </div>
+
+  <div class="ea-form-group">
+    <label for="account-date-field">
+      Date
+    </label>
+    <eui-textfield
+      name="account-date-field"
+      placeholder="MM / YY"
+      mask="00 / 00"
+      dropSpecialCharacters="false"
+      [formControl]="accountExpiry"
+      [customErrors]="{'required': 'Please enter a expiry date', 'pattern': 'Expiry date must contain a valid date'}">
     </eui-textfield>
   </div>
 
