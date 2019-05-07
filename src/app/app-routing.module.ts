@@ -20,6 +20,7 @@ import {AccordionTestComponent} from './accordion-test/accordion-test.component'
 const routes: Routes = [
   { path: '', component: HomeComponent },
   { path: 'textfield', component: TextfieldTestComponent },
+  { path: 'textfield-lazyload', loadChildren: './textfield-lazyload/textfield-lazyload.module#TextfieldLazyloadModule'},
   { path: 'textarea', component: TextareaTestComponent },
   { path: 'dropdown', component: DropdownTestComponent },
   { path: 'radiobutton', component: RadiobuttonTestComponent },

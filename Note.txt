@@ -6,3 +6,7 @@ D:\Temp\my-angular-app>npm uninstall ea-comp-lib
 
 
 192-168-1-100:my-angular-app anniehuang$ npm install primeicons --save
+
+Bradleys-MacBook-Pro:my-angular-app anniehuang$ ng generate module textfield-lazyload --routing=true
+Bradleys-MacBook-Pro:my-angular-app anniehuang$ ng generate component textfield-lazyload --dry-run
+
