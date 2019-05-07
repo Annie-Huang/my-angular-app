@@ -9,12 +9,13 @@ import {ModalService} from '@ea/ea-ui';
 export class ModalComponent implements OnInit {
   public readonly MODAL1_ID = 'modal1';
 
-  constructor(private modalService: ModalService) { }
+  constructor(private readonly modalService: ModalService) {
+  }
 
   ngOnInit() {
   }
 
-  handleClick() {
+  showModal1() {
     this.modalService.open(this.MODAL1_ID);
   }
 
