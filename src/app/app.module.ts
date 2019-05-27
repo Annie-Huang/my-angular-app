@@ -6,7 +6,7 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { EuiFormsModule, TextfieldModule, SpinnerModule, ModalModule, MessageModule, MessageService,
   DropdownModule, RadioButtonGroupModule, ButtonGroupModule, TextareaModule, CheckboxModule, AutoCompleteModule,
-  AccordionModule} from '@ea/ea-ui';
+  AccordionModule, TooltipModule} from '@ea/ea-ui';
 import { AppRoutingModule } from './app-routing.module';
 
 import { AppComponent } from './app.component';
@@ -28,6 +28,7 @@ import { Form3ChildComponent } from './fielderror3-test/form3-child.component';
 import { Fielderror4TestComponent } from './fielderror4-test/fielderror4-test.component';
 import { Form4ChildComponent } from './fielderror4-test/form4-child.component';
 import { AccordionTestComponent } from './accordion-test/accordion-test.component';
+import { TooltipTestComponent } from './tooltip-test/tooltip-test.component';
 
 @NgModule({
   declarations: [
@@ -50,7 +51,8 @@ import { AccordionTestComponent } from './accordion-test/accordion-test.componen
     Form3ChildComponent,
     Fielderror4TestComponent,
     Form4ChildComponent,
-    AccordionTestComponent
+    AccordionTestComponent,
+    TooltipTestComponent
   ],
   imports: [
     BrowserModule,
@@ -69,7 +71,8 @@ import { AccordionTestComponent } from './accordion-test/accordion-test.componen
     TextareaModule,
     CheckboxModule,
     AutoCompleteModule,
-    AccordionModule
+    AccordionModule,
+    TooltipModule
   ],
   providers: [MessageService],
   bootstrap: [AppComponent]
