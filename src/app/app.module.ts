@@ -6,7 +6,7 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { EuiFormsModule, TextfieldModule, SpinnerModule, ModalModule, MessageModule, MessageService,
   DropdownModule, RadioButtonGroupModule, ButtonGroupModule, TextareaModule, CheckboxModule, AutoCompleteModule,
-  AccordionModule, TooltipModule} from '@ea/ea-ui';
+  AccordionModule} from '@ea/ea-ui';
 import { AppRoutingModule } from './app-routing.module';
 
 import { AppComponent } from './app.component';
@@ -71,8 +71,7 @@ import { TooltipTestComponent } from './tooltip-test/tooltip-test.component';
     TextareaModule,
     CheckboxModule,
     AutoCompleteModule,
-    AccordionModule,
-    TooltipModule
+    AccordionModule
   ],
   providers: [MessageService],
   bootstrap: [AppComponent]
