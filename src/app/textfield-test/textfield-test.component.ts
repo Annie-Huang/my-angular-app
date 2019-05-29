@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import {AbstractControl, FormBuilder, FormGroup, Validators} from '@angular/forms';
+import { AbstractControl, FormBuilder, FormControl, FormGroup, Validators, ValidationErrors } from '@angular/forms';
+import { Observable, timer } from 'rxjs';
+import { delay, filter, map } from 'rxjs/operators';
 
 @Component({
   selector: 'app-textfield-test',
@@ -22,7 +24,11 @@ export class TextfieldTestComponent implements OnInit {
     return this.form.get('postcode');
   }
 
-  constructor(private readonly fb: FormBuilder) { }
+  get asyncValidator(): AbstractControl {
+    return this.form.get('asyncValidator');
+  }
+
+  constructor(private readonly fb: FormBuilder) {}
 
   ngOnInit() {
     this.createForm();
@@ -36,6 +42,7 @@ export class TextfieldTestComponent implements OnInit {
     this.form = this.fb.group({
       accountName: [null, [Validators.required]],
       postcode: [null, [Validators.required, Validators.pattern(/^[0-9]{4}$/)]],
+      asyncValidator: [null, [Validators.required], [this.validateAsync.bind(this)]],
       accountExpiry: [null, [Validators.required, Validators.pattern(/^(((0)[0-9])|((1)[0-2]))( \/ )\d{2}$/)]]
     });
   }
@@ -46,5 +53,20 @@ export class TextfieldTestComponent implements OnInit {
     } else {
       this.success = '';
     }
+  }
+
+  private validateAsync(control: FormControl): Observable<ValidationErrors> {
+    return timer(500).pipe(
+      filter(() => control.value),
+      map(() => control.value),
+      delay(2000),
+      map(value => {
+        const errors = {} as ValidationErrors;
+        if (value !== 'secret') {
+          errors['invalid-code'] = {};
+        }
+        return errors;
+      })
+    );
   }
 }

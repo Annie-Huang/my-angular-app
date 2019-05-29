@@ -1,3 +1,11 @@
+<h3>Processing</h3>
+<label for="textfield-field">Label</label>
+<eui-textfield
+  name="textfield-field"
+  placeholder="Please enter the text"
+  [processing]="true"
+  (valueChange)="onChange($event)"></eui-textfield>
+
 <h3>Input Mask</h3>
 <label for="textfield-field-date">Label</label>
 <eui-textfield
@@ -31,6 +39,18 @@
       dropSpecialCharacters="false"
       [formControl]="accountExpiry"
       [customErrors]="{'required': 'Please enter a expiry date', 'pattern': 'Expiry date must contain a valid date'}">
+    </eui-textfield>
+  </div>
+
+  <div class="ea-form-group">
+    <label for="offer-code-field">
+      Offer Code (Async Validation)
+    </label>
+    <eui-textfield
+      name="offer-code-field"
+      placeholder="Enter some text"
+      [formControl]="asyncValidator"
+      [customErrors]="{'required': 'Please enter an offer code', 'invalid-code': 'The code is invalid (try \'secret\')'}">
     </eui-textfield>
   </div>
 
