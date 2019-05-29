@@ -14,9 +14,6 @@ export class HomeComponent implements OnInit {
   ngOnInit() {
   }
 
-  handleClick(event) {
-  }
-
   showMessage(severity: string)  {
     this.messageService.add( {severity: severity, detail: `this is a ${severity} message.`, position: 'message-custom-location' });
   }
