@@ -3,10 +3,12 @@ import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 
 import { BrowserModule } from '@angular/platform-browser';
+import { MatTabsModule } from '@angular/material/tabs';
 
 import { EuiFormsModule, TextfieldModule, SpinnerModule, ModalModule, MessageModule, MessageService,
   DropdownModule, RadioButtonGroupModule, ButtonGroupModule, TextareaModule, CheckboxModule, AutoCompleteModule,
   AccordionModule, TooltipModule, TabsModule} from '@ea/ea-ui';
+
 import { AppRoutingModule } from './app-routing.module';
 
 import { AppComponent } from './app.component';
@@ -58,6 +60,7 @@ import { TabsTestComponent } from './tabs-test/tabs-test.component';
   ],
   imports: [
     BrowserModule,
+    MatTabsModule,
     AppRoutingModule,
     FormsModule,
     ReactiveFormsModule,
