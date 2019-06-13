@@ -18,3 +18,8 @@
   <p>Form status: {{ form.status }}</p>
   <p>{{ success }}</p>
 </form>
+
+<h3>Multiple</h3>
+<p-selectButton [options]="types" [(ngModel)]="selectedTypes" multiple="multiple"></p-selectButton>
+<p>Selected Types: <span style="font-weight: bold" *ngFor="let type of selectedTypes">{{type}} </span></p>
+

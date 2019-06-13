@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {AbstractControl, FormBuilder, FormGroup, Validators} from '@angular/forms';
 import {FieldOption} from '@ea/ea-ui';
+import {SelectItem} from 'primeng/api';
 
 enum FuelType {
   ELE = 'ELE',
@@ -24,6 +25,12 @@ export class ButtongroupTestComponent implements OnInit {
   threeOptions: Array<FieldOption<FuelType>> = [];
   form: FormGroup;
   success = '';
+
+
+  types: SelectItem[];
+  selectedType: string;
+  selectedTypes: string[] = ['PayPal','MasterCard'];
+
 
   get fuelType(): AbstractControl {
     return this.form.get('fuelType');
@@ -54,6 +61,12 @@ export class ButtongroupTestComponent implements OnInit {
         value: FuelType.GAS,
         text: `${FuelTypeDescriptive.GAS} only`
       }),
+    ];
+
+    this.types = [
+      {label: 'Electricity and Gas Electricity and Gas', value: 'Electricity and Gas'},
+      {label: 'Electricity only Electricity only', value: 'Electricity only'},
+      {label: 'Gas only Gas only', value: 'Gas only'}
     ];
   }
 
