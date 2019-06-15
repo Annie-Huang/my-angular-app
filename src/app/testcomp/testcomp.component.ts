@@ -7,7 +7,7 @@ import {Component, Input, OnInit} from '@angular/core';
 })
 export class TestcompComponent implements OnInit {
 
-  @Input() flag: boolean = false;
+  @Input() flag = false;
 
   constructor() {
     // console.log('in constructor: flag=', this.flag);

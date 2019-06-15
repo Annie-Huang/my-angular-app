@@ -22,7 +22,8 @@ import {TabsTestComponent} from './tabs-test/tabs-test.component';
 const routes: Routes = [
   { path: '', component: HomeComponent },
   { path: 'textfield', component: TextfieldTestComponent },
-  { path: 'textfield-lazyload', loadChildren: () => import('./textfield-lazyload/textfield-lazyload.module').then(m => m.TextfieldLazyloadModule)},
+  { path: 'textfield-lazyload', loadChildren: () =>
+      import('./textfield-lazyload/textfield-lazyload.module').then(m => m.TextfieldLazyloadModule)},
   { path: 'textarea', component: TextareaTestComponent },
   { path: 'dropdown', component: DropdownTestComponent },
   { path: 'radiobutton', component: RadiobuttonTestComponent },
