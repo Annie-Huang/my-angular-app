@@ -24,7 +24,6 @@
     "@angular/router": "~8.0.1",
     "@ea/ea-ui": "file:../ea-component-library/dist/ea-ui/ea-ea-ui-1.9.1.tgz",
     "core-js": "^2.5.4",
-    "npm": "^6.5.0",
     "primeicons": "^1.0.0",
     "primeng": "^8.0.0",
     "rxjs": "~6.5.2",
