@@ -28,8 +28,7 @@ export class ButtongroupTestComponent implements OnInit {
 
 
   types: SelectItem[];
-  selectedType: string;
-  selectedTypes: string[] = ['PayPal','MasterCard'];
+  selectedTypes: string[] = ['Electricity and Gas', 'Gas only |', 'Electricity only'];
 
 
   get fuelType(): AbstractControl {
@@ -73,10 +72,6 @@ export class ButtongroupTestComponent implements OnInit {
   ngOnInit() {
     this.createForm();
   }
-
-  onChange($event) {
-  }
-
 
   createForm() {
     this.form = this.fb.group({

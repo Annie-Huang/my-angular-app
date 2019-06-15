@@ -1,6 +1,8 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { Fielderror1TestComponent } from './fielderror1-test.component';
+import {EuiFormsModule, TextfieldModule} from '@ea/ea-ui';
+import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 
 describe('Fielderror1TestComponent', () => {
   let component: Fielderror1TestComponent;
@@ -8,7 +10,8 @@ describe('Fielderror1TestComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ Fielderror1TestComponent ]
+      declarations: [ Fielderror1TestComponent ],
+      imports: [EuiFormsModule, FormsModule, ReactiveFormsModule, TextfieldModule]
     })
     .compileComponents();
   }));

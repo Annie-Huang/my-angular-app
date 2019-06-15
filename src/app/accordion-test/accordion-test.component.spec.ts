@@ -1,6 +1,8 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { AccordionTestComponent } from './accordion-test.component';
+import {AccordionModule} from '@ea/ea-ui';
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 
 describe('AccordionTestComponent', () => {
   let component: AccordionTestComponent;
@@ -8,7 +10,8 @@ describe('AccordionTestComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ AccordionTestComponent ]
+      declarations: [ AccordionTestComponent ],
+      imports: [AccordionModule, BrowserAnimationsModule]
     })
     .compileComponents();
   }));

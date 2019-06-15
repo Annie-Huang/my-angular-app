@@ -1,6 +1,8 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { DropdownTestComponent } from './dropdown-test.component';
+import {DropdownModule, EuiFormsModule} from '@ea/ea-ui';
+import {ReactiveFormsModule} from '@angular/forms';
 
 describe('DropdownTestComponent', () => {
   let component: DropdownTestComponent;
@@ -8,7 +10,8 @@ describe('DropdownTestComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ DropdownTestComponent ]
+      declarations: [ DropdownTestComponent ],
+      imports: [EuiFormsModule, DropdownModule, ReactiveFormsModule]
     })
     .compileComponents();
   }));
