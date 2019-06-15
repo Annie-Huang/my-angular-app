@@ -11,7 +11,7 @@ export class DropdownTestComponent implements OnInit {
 
   form: FormGroup;
   success = '';
-  demoOptions: Array<FieldOption<String>> = [];
+  demoOptions: Array<FieldOption<string>> = [];
 
   get myOption(): AbstractControl {
     return this.form.get('myOption');

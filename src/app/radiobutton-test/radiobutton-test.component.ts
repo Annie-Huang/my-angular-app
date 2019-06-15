@@ -9,8 +9,8 @@ import {FieldOption} from '@ea/ea-ui';
 })
 export class RadiobuttonTestComponent implements OnInit {
 
-  twoOptions: Array<FieldOption<String>> = [];
-  twoOptionsBlurb: Array<FieldOption<String>> = [];
+  twoOptions: Array<FieldOption<string>> = [];
+  twoOptionsBlurb: Array<FieldOption<string>> = [];
   form: FormGroup;
   success = '';
 

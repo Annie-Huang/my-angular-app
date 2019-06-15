@@ -15,7 +15,7 @@ export class HomeComponent implements OnInit {
   }
 
   showMessage(severity: string)  {
-    this.messageService.add( {severity: severity, detail: `this is a ${severity} message.`, position: 'message-custom-location' });
+    this.messageService.add( {severity, detail: `this is a ${severity} message.`, position: 'message-custom-location' });
   }
 
 }
