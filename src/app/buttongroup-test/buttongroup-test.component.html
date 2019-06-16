@@ -19,6 +19,16 @@
   <p>{{ success }}</p>
 </form>
 
+
+<label>Four options</label>
+<eui-button-group
+  name="fuel-type-field"
+  [options]="fourOptions"
+  [formControl]="fuelType"
+  [customErrors]="{'required': 'Please choose your fuel type'}">
+</eui-button-group>
+<br/>
+
 <h3>Multiple</h3>
 <p-selectButton [options]="types" [(ngModel)]="selectedTypes" multiple="multiple"></p-selectButton>
 <p>Selected Types: <span style="font-weight: bold" *ngFor="let type of selectedTypes">{{type}} </span></p>

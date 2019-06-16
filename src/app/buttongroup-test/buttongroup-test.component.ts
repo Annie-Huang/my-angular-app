@@ -23,6 +23,7 @@ enum FuelTypeDescriptive {
 export class ButtongroupTestComponent implements OnInit {
   twoOptions: Array<FieldOption<FuelType>> = [];
   threeOptions: Array<FieldOption<FuelType>> = [];
+  fourOptions: Array<FieldOption<string>> = [];
   form: FormGroup;
   success = '';
 
@@ -60,6 +61,25 @@ export class ButtongroupTestComponent implements OnInit {
       new FieldOption({
         value: FuelType.GAS,
         text: `${FuelTypeDescriptive.GAS} only`
+      }),
+    ];
+
+    this.fourOptions = [
+      new FieldOption({
+        value: 'Monthly',
+        text: 'M'
+      }),
+      new FieldOption({
+        value: 'Quarter',
+        text: 'Q'
+      }),
+      new FieldOption({
+        value: 'Annually',
+        text: 'Y'
+      }),
+      new FieldOption({
+        value: 'Bill',
+        text: 'Bill'
       }),
     ];
 
