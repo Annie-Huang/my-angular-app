@@ -9,7 +9,7 @@ import {SelectButtonModule} from 'primeng/primeng';
 
 import { EuiFormsModule, TextfieldModule, SpinnerModule, ModalModule, MessageModule, MessageService,
   DropdownModule, RadioButtonGroupModule, ButtonGroupModule, TextareaModule, CheckboxModule, AutoCompleteModule,
-  AccordionModule, TooltipModule, TabsModule} from '@ea/ea-ui';
+  AccordionModule, TooltipModule, TabsModule, StepsModule} from '@ea/ea-ui';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -33,6 +33,7 @@ import { Form4ChildComponent } from './fielderror4-test/form4-child.component';
 import { AccordionTestComponent } from './accordion-test/accordion-test.component';
 import { TooltipTestComponent } from './tooltip-test/tooltip-test.component';
 import { TabsTestComponent } from './tabs-test/tabs-test.component';
+import { StepsTestComponent } from './steps-test/steps-test.component';
 
 @NgModule({
   declarations: [
@@ -57,7 +58,8 @@ import { TabsTestComponent } from './tabs-test/tabs-test.component';
     Form4ChildComponent,
     AccordionTestComponent,
     TooltipTestComponent,
-    TabsTestComponent
+    TabsTestComponent,
+    StepsTestComponent
   ],
   imports: [
     BrowserModule,
@@ -80,7 +82,8 @@ import { TabsTestComponent } from './tabs-test/tabs-test.component';
     AccordionModule,
     TooltipModule,
     TabsModule,
-    SelectButtonModule
+    SelectButtonModule,
+    StepsModule
   ],
   providers: [MessageService],
   bootstrap: [AppComponent]

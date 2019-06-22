@@ -18,6 +18,7 @@ import {Fielderror4TestComponent} from './fielderror4-test/fielderror4-test.comp
 import {AccordionTestComponent} from './accordion-test/accordion-test.component';
 import {TooltipTestComponent} from './tooltip-test/tooltip-test.component';
 import {TabsTestComponent} from './tabs-test/tabs-test.component';
+import {StepsTestComponent} from './steps-test/steps-test.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
@@ -37,7 +38,8 @@ const routes: Routes = [
   { path: 'fielderror4', component: Fielderror4TestComponent },
   { path: 'accordion', component: AccordionTestComponent },
   { path: 'tooltip', component: TooltipTestComponent },
-  { path: 'tabs', component: TabsTestComponent }
+  { path: 'tabs', component: TabsTestComponent },
+  { path: 'steps', component: StepsTestComponent }
 ];
 
 @NgModule({
