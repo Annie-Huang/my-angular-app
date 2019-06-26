@@ -5,8 +5,6 @@ import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import { BrowserModule } from '@angular/platform-browser';
 import { MatTabsModule } from '@angular/material/tabs';
 
-import {SelectButtonModule} from 'primeng/primeng';
-
 import { EuiFormsModule, TextfieldModule, SpinnerModule, ModalModule, MessageModule, MessageService,
   DropdownModule, RadioButtonGroupModule, ButtonGroupModule, TextareaModule, CheckboxModule, AutoCompleteModule,
   AccordionModule, TooltipModule, TabsModule, StepsModule} from '@ea/ea-ui';
@@ -82,7 +80,6 @@ import { StepsTestComponent } from './steps-test/steps-test.component';
     AccordionModule,
     TooltipModule,
     TabsModule,
-    SelectButtonModule,
     StepsModule
   ],
   providers: [MessageService],
