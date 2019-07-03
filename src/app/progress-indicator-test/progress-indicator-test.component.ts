@@ -7,12 +7,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ProgressIndicatorTestComponent implements OnInit {
 
+  currentStep = 3;
+  numberOfSteps = 5;
+
   constructor() { }
 
   ngOnInit() {
   }
-
-  currentStep = 3;
-  numberOfSteps = 5;
-
 }
