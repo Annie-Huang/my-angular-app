@@ -10,6 +10,7 @@ import { EuiFormsModule, TextfieldModule, SpinnerModule, ModalModule, MessageMod
   AccordionModule, TooltipModule, TabsModule, ProgressIndicatorModule} from '@ea/ea-ui';
 
 import {TooltipModule as TooltipModulePrime} from 'primeng/tooltip';
+import {MatTooltipModule} from '@angular/material/tooltip';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -83,7 +84,8 @@ import { ProgressIndicatorTestComponent } from './progress-indicator-test/progre
     TooltipModule,
     TabsModule,
     ProgressIndicatorModule,
-    TooltipModulePrime
+    TooltipModulePrime,
+    MatTooltipModule
   ],
   providers: [MessageService],
   bootstrap: [AppComponent]

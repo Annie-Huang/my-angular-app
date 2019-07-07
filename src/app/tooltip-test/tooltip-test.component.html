@@ -32,3 +32,46 @@
     <input type="text" pInputText pTooltip="Enter your username" placeholder="Right">
   </div>
 </div>
+
+
+<br>
+<h3 class="first">Material Positions</h3>
+<div class="ui-g ui-fluid">
+  <div class="ui-g-12 ui-md-3">
+  </div>
+  <div class="ui-g-12 ui-md-3">
+    <button mat-raised-button
+            matTooltip="Info about the action"
+            [matTooltipPosition]="positionLeft.value"
+            aria-label="Button that displays a tooltip in various positions">
+      Left
+    </button>
+  </div>
+  <div class="ui-g-12 ui-md-3">
+    <button mat-raised-button
+            matTooltip="Info about the action"
+            [matTooltipPosition]="positionAbove.value"
+            aria-label="Button that displays a tooltip in various positions">
+      Above
+    </button>
+  </div>
+  <div class="ui-g-12 ui-md-3">
+    <button mat-raised-button
+            matTooltip="Info about the action"
+            [matTooltipPosition]="positionBelow.value"
+            aria-label="Button that displays a tooltip in various positions">
+      Below
+    </button>
+  </div>
+  <div class="ui-g-12 ui-md-3">
+    <button mat-raised-button
+            matTooltip="Info about the action"
+            [matTooltipPosition]="positionRight.value"
+            aria-label="Button that displays a tooltip in various positions">
+      Right
+    </button>
+  </div>
+</div>
+
+<br>
+<br>
