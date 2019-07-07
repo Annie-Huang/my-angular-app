@@ -9,6 +9,8 @@ import { EuiFormsModule, TextfieldModule, SpinnerModule, ModalModule, MessageMod
   DropdownModule, RadioButtonGroupModule, ButtonGroupModule, TextareaModule, CheckboxModule, AutoCompleteModule,
   AccordionModule, TooltipModule, TabsModule, ProgressIndicatorModule} from '@ea/ea-ui';
 
+import {TooltipModule as TooltipModulePrime} from 'primeng/tooltip';
+
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
@@ -80,7 +82,8 @@ import { ProgressIndicatorTestComponent } from './progress-indicator-test/progre
     AccordionModule,
     TooltipModule,
     TabsModule,
-    ProgressIndicatorModule
+    ProgressIndicatorModule,
+    TooltipModulePrime
   ],
   providers: [MessageService],
   bootstrap: [AppComponent]
