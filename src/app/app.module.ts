@@ -35,6 +35,7 @@ import { AccordionTestComponent } from './accordion-test/accordion-test.componen
 import { TooltipTestComponent } from './tooltip-test/tooltip-test.component';
 import { TabsTestComponent } from './tabs-test/tabs-test.component';
 import { ProgressIndicatorTestComponent } from './progress-indicator-test/progress-indicator-test.component';
+import { IconsSvgTestComponent } from './icons-svg-test/icons-svg-test.component';
 
 @NgModule({
   declarations: [
@@ -60,7 +61,8 @@ import { ProgressIndicatorTestComponent } from './progress-indicator-test/progre
     AccordionTestComponent,
     TooltipTestComponent,
     TabsTestComponent,
-    ProgressIndicatorTestComponent
+    ProgressIndicatorTestComponent,
+    IconsSvgTestComponent
   ],
   imports: [
     BrowserModule,
