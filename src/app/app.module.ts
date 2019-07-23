@@ -1,9 +1,12 @@
 import { NgModule } from '@angular/core';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+import { HttpClientModule } from '@angular/common/http';
 
 import { BrowserModule } from '@angular/platform-browser';
 import { MatTabsModule } from '@angular/material/tabs';
+import { InlineSVGModule } from 'ng-inline-svg';
+
 
 import { EuiFormsModule, TextfieldModule, SpinnerModule, ModalModule, MessageModule, MessageService,
   DropdownModule, RadioButtonGroupModule, ButtonGroupModule, TextareaModule, CheckboxModule, AutoCompleteModule,
@@ -87,7 +90,9 @@ import { IconsSvgTestComponent } from './icons-svg-test/icons-svg-test.component
     TabsModule,
     ProgressIndicatorModule,
     TooltipModulePrime,
-    MatTooltipModule
+    MatTooltipModule,
+    HttpClientModule,
+    InlineSVGModule.forRoot()
   ],
   providers: [MessageService],
   bootstrap: [AppComponent]

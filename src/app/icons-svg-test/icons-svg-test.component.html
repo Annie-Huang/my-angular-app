@@ -1,3 +1,22 @@
-<p>
-  icons-svg-test works!
-</p>
+<h3>Img vs Div vs Span</h3>
+<p>If you don't need to change the color, you can just use img. img element still allows you to change size.</p>
+<p>Img</p>
+<img class="icon1" src="assets/images/icons/alert-fill.svg" alt="icon alert" />
+<p>Div</p>
+<div class="icon1" aria-label="My alert" [inlineSVG]="'assets/images/icons/alert-fill.svg'"></div>
+<div class="icon1" aria-label="My alert" [inlineSVG]="'assets/images/icons/alert-fill.svg'"></div>
+<p>Span</p>
+<span class="icon2" aria-label="My alert" [inlineSVG]="'assets/images/icons/alert-fill.svg'"></span>
+<span class="icon2" aria-label="My alert" [inlineSVG]="'assets/images/icons/alert-fill.svg'"></span>
+
+<h3>Size (we usually set the height and width to be the same value)</h3>
+<span class="icon3" aria-label="My alert" [inlineSVG]="'assets/images/icons/alert-fill.svg'"></span>
+<span class="icon4" aria-label="My alert" [inlineSVG]="'assets/images/icons/alert-fill.svg'"></span>
+
+<h3>Colour</h3>
+<span class="icon5" aria-label="My alert" [inlineSVG]="'assets/images/icons/alert-fill.svg'"></span>
+<span class="icon6" aria-label="My alert" [inlineSVG]="'assets/images/icons/alert-fill.svg'"></span>
+
+<h3>Fill vs Outline</h3>
+<span class="icon3" aria-label="My alert" [inlineSVG]="'assets/images/icons/alert-fill.svg'"></span>
+<span class="icon3" aria-label="My alert" [inlineSVG]="'assets/images/icons/alert-outline.svg'"></span>

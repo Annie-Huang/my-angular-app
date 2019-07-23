@@ -1,0 +1,37 @@
+@import 'ea-style/variables';
+
+.icon1 {
+  width: 100px;
+  height: 100px;
+  color: $color-brand-light-green;
+}
+.icon2 {
+  width: 100px;
+  height: 100px;
+  color: $color-brand-dark-green;
+  display: inline-block;
+}
+
+.icon3 {
+  width: 100px;
+  height: 100px;
+  display: inline-block;
+}
+.icon4 {
+  width: 150px;
+  height: 150px;
+  display: inline-block;
+}
+
+.icon5 {
+  width: 100px;
+  height: 100px;
+  color: $color-alert-warn-border;
+  display: inline-block;
+}
+.icon6 {
+  width: 100px;
+  height: 100px;
+  color: $color-alert-error-bg;
+  display: inline-block;
+}
