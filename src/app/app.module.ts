@@ -10,7 +10,7 @@ import { InlineSVGModule } from 'ng-inline-svg';
 
 import { EuiFormsModule, TextfieldModule, SpinnerModule, ModalModule, MessageModule, MessageService,
   DropdownModule, RadioButtonGroupModule, ButtonGroupModule, TextareaModule, CheckboxModule, AutoCompleteModule,
-  AccordionModule, TooltipModule, TabsModule, ProgressIndicatorModule} from '@ea/ea-ui';
+  AccordionModule, TooltipModule, TabsModule, ProgressIndicatorModule, FooterModule} from '@ea/ea-ui';
 
 import {TooltipModule as TooltipModulePrime} from 'primeng/tooltip';
 import {MatTooltipModule} from '@angular/material/tooltip';
@@ -39,6 +39,7 @@ import { TooltipTestComponent } from './tooltip-test/tooltip-test.component';
 import { TabsTestComponent } from './tabs-test/tabs-test.component';
 import { ProgressIndicatorTestComponent } from './progress-indicator-test/progress-indicator-test.component';
 import { IconsSvgTestComponent } from './icons-svg-test/icons-svg-test.component';
+import { FooterTestComponent } from './footer-test/footer-test.component';
 
 @NgModule({
   declarations: [
@@ -65,7 +66,8 @@ import { IconsSvgTestComponent } from './icons-svg-test/icons-svg-test.component
     TooltipTestComponent,
     TabsTestComponent,
     ProgressIndicatorTestComponent,
-    IconsSvgTestComponent
+    IconsSvgTestComponent,
+    FooterTestComponent
   ],
   imports: [
     BrowserModule,
@@ -92,7 +94,8 @@ import { IconsSvgTestComponent } from './icons-svg-test/icons-svg-test.component
     TooltipModulePrime,
     MatTooltipModule,
     HttpClientModule,
-    InlineSVGModule.forRoot()
+    InlineSVGModule.forRoot(),
+    FooterModule
   ],
   providers: [MessageService],
   bootstrap: [AppComponent]
