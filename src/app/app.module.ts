@@ -40,6 +40,7 @@ import { TabsTestComponent } from './tabs-test/tabs-test.component';
 import { ProgressIndicatorTestComponent } from './progress-indicator-test/progress-indicator-test.component';
 import { IconsSvgTestComponent } from './icons-svg-test/icons-svg-test.component';
 import { FooterTestComponent } from './footer-test/footer-test.component';
+import { MessageTestComponent } from './message-test/message-test.component';
 
 @NgModule({
   declarations: [
@@ -67,7 +68,8 @@ import { FooterTestComponent } from './footer-test/footer-test.component';
     TabsTestComponent,
     ProgressIndicatorTestComponent,
     IconsSvgTestComponent,
-    FooterTestComponent
+    FooterTestComponent,
+    MessageTestComponent
   ],
   imports: [
     BrowserModule,
