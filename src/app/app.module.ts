@@ -1,15 +1,19 @@
 import { NgModule } from '@angular/core';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+import { HttpClientModule } from '@angular/common/http';
 
 import { BrowserModule } from '@angular/platform-browser';
 import { MatTabsModule } from '@angular/material/tabs';
+import { InlineSVGModule } from 'ng-inline-svg';
 
-import {SelectButtonModule} from 'primeng/primeng';
 
 import { EuiFormsModule, TextfieldModule, SpinnerModule, ModalModule, MessageModule, MessageService,
   DropdownModule, RadioButtonGroupModule, ButtonGroupModule, TextareaModule, CheckboxModule, AutoCompleteModule,
-  AccordionModule, TooltipModule, TabsModule} from '@ea/ea-ui';
+  AccordionModule, TooltipModule, TabsModule, ProgressIndicatorModule, FooterModule} from '@ea/ea-ui';
+
+import {TooltipModule as TooltipModulePrime} from 'primeng/tooltip';
+import {MatTooltipModule} from '@angular/material/tooltip';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -33,6 +37,10 @@ import { Form4ChildComponent } from './fielderror4-test/form4-child.component';
 import { AccordionTestComponent } from './accordion-test/accordion-test.component';
 import { TooltipTestComponent } from './tooltip-test/tooltip-test.component';
 import { TabsTestComponent } from './tabs-test/tabs-test.component';
+import { ProgressIndicatorTestComponent } from './progress-indicator-test/progress-indicator-test.component';
+import { IconsSvgTestComponent } from './icons-svg-test/icons-svg-test.component';
+import { FooterTestComponent } from './footer-test/footer-test.component';
+import { MessageTestComponent } from './message-test/message-test.component';
 
 @NgModule({
   declarations: [
@@ -57,7 +65,11 @@ import { TabsTestComponent } from './tabs-test/tabs-test.component';
     Form4ChildComponent,
     AccordionTestComponent,
     TooltipTestComponent,
-    TabsTestComponent
+    TabsTestComponent,
+    ProgressIndicatorTestComponent,
+    IconsSvgTestComponent,
+    FooterTestComponent,
+    MessageTestComponent
   ],
   imports: [
     BrowserModule,
@@ -80,7 +92,12 @@ import { TabsTestComponent } from './tabs-test/tabs-test.component';
     AccordionModule,
     TooltipModule,
     TabsModule,
-    SelectButtonModule
+    ProgressIndicatorModule,
+    TooltipModulePrime,
+    MatTooltipModule,
+    HttpClientModule,
+    InlineSVGModule.forRoot(),
+    FooterModule
   ],
   providers: [MessageService],
   bootstrap: [AppComponent]
