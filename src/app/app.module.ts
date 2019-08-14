@@ -10,7 +10,7 @@ import { InlineSVGModule } from 'ng-inline-svg';
 
 import { EuiFormsModule, TextfieldModule, SpinnerModule, ModalModule, MessageModule, MessageService,
   DropdownModule, RadioButtonGroupModule, ButtonGroupModule, TextareaModule, CheckboxModule, AutoCompleteModule,
-  AccordionModule, TooltipModule, TabsModule, ProgressIndicatorModule, FooterModule} from '@ea/ea-ui';
+  AccordionModule, TooltipModule, TabsModule, ProgressIndicatorModule, FooterModule, CalendarModule} from '@ea/ea-ui';
 
 import {TooltipModule as TooltipModulePrime} from 'primeng/tooltip';
 import {MatTooltipModule} from '@angular/material/tooltip';
@@ -41,6 +41,7 @@ import { ProgressIndicatorTestComponent } from './progress-indicator-test/progre
 import { IconsSvgTestComponent } from './icons-svg-test/icons-svg-test.component';
 import { FooterTestComponent } from './footer-test/footer-test.component';
 import { MessageTestComponent } from './message-test/message-test.component';
+import { CalendarTestComponent } from './calendar-test/calendar-test.component';
 
 @NgModule({
   declarations: [
@@ -69,7 +70,8 @@ import { MessageTestComponent } from './message-test/message-test.component';
     ProgressIndicatorTestComponent,
     IconsSvgTestComponent,
     FooterTestComponent,
-    MessageTestComponent
+    MessageTestComponent,
+    CalendarTestComponent
   ],
   imports: [
     BrowserModule,
@@ -97,7 +99,8 @@ import { MessageTestComponent } from './message-test/message-test.component';
     MatTooltipModule,
     HttpClientModule,
     InlineSVGModule.forRoot(),
-    FooterModule
+    FooterModule,
+    CalendarModule
   ],
   providers: [MessageService],
   bootstrap: [AppComponent]

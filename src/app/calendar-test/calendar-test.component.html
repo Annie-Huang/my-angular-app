@@ -1,0 +1,24 @@
+<h3 class="first">Default</h3>
+<eui-calendar
+  [enabledDates]="calendar.enabledDates"
+  [defaultDate]="calendar.defaultDate"
+  (selectEvent)="onDateSelected1($event)"
+  [disabledDays]="[0, 6]"
+>
+</eui-calendar>
+<br>
+<p>The selected date is <strong>{{ selectedDate1 }}</strong></p>
+<hr><br>
+<h3 class="first">Show on input focus</h3>
+<eui-calendar
+  [inline]="false"
+  [enabledDates]="calendar.enabledDates"
+  [defaultDate]="calendar.defaultDate"
+  (selectEvent)="onDateSelected2($event)"
+  [disabledDays]="[0, 6]"
+>
+</eui-calendar>
+<br>
+<p>The selected date is <strong>{{ selectedDate2 }}</strong></p>
+
+

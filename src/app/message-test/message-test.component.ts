@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import {MessageService} from '@ea/ea-ui';
 
 @Component({
@@ -6,7 +6,7 @@ import {MessageService} from '@ea/ea-ui';
   templateUrl: './message-test.component.html',
   styleUrls: ['./message-test.component.scss']
 })
-export class MessageTestComponent implements OnInit {
+export class MessageTestComponent {
 
   constructor(private messageService: MessageService) { }
 
