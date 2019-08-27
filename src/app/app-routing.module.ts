@@ -23,6 +23,7 @@ import {IconsSvgTestComponent} from './icons-svg-test/icons-svg-test.component';
 import {FooterTestComponent} from './footer-test/footer-test.component';
 import {MessageTestComponent} from './message-test/message-test.component';
 import {CalendarTestComponent} from './calendar-test/calendar-test.component';
+import {SliderTestComponent} from './slider-test/slider-test.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
@@ -47,7 +48,8 @@ const routes: Routes = [
   { path: 'icons-svg', component: IconsSvgTestComponent },
   { path: 'footer', component: FooterTestComponent },
   { path: 'message', component: MessageTestComponent },
-  { path: 'calendar', component: CalendarTestComponent }
+  { path: 'calendar', component: CalendarTestComponent },
+  { path: 'slider', component: SliderTestComponent }
 ];
 
 @NgModule({
