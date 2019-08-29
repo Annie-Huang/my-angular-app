@@ -24,6 +24,7 @@ import {FooterTestComponent} from './footer-test/footer-test.component';
 import {MessageTestComponent} from './message-test/message-test.component';
 import {CalendarTestComponent} from './calendar-test/calendar-test.component';
 import {SliderTestComponent} from './slider-test/slider-test.component';
+import {FabTestComponent} from './fab-test/fab-test.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
@@ -49,7 +50,8 @@ const routes: Routes = [
   { path: 'footer', component: FooterTestComponent },
   { path: 'message', component: MessageTestComponent },
   { path: 'calendar', component: CalendarTestComponent },
-  { path: 'slider', component: SliderTestComponent }
+  { path: 'slider', component: SliderTestComponent },
+  { path: 'fab', component: FabTestComponent}
 ];
 
 @NgModule({

@@ -8,9 +8,11 @@ import { MatTabsModule } from '@angular/material/tabs';
 import { InlineSVGModule } from 'ng-inline-svg';
 
 
-import { EuiFormsModule, TextfieldModule, SpinnerModule, ModalModule, MessageModule, MessageService,
+import {
+  EuiFormsModule, TextfieldModule, SpinnerModule, ModalModule, MessageModule, MessageService,
   DropdownModule, RadioButtonGroupModule, ButtonGroupModule, TextareaModule, CheckboxModule, AutoCompleteModule,
-  AccordionModule, TooltipModule, TabsModule, ProgressIndicatorModule, FooterModule, CalendarModule, SliderModule} from '@ea/ea-ui';
+  AccordionModule, TooltipModule, TabsModule, ProgressIndicatorModule, FooterModule, CalendarModule, SliderModule, FabModule
+} from '@ea/ea-ui';
 
 import {TooltipModule as TooltipModulePrime} from 'primeng/tooltip';
 import {MatTooltipModule} from '@angular/material/tooltip';
@@ -43,6 +45,7 @@ import { FooterTestComponent } from './footer-test/footer-test.component';
 import { MessageTestComponent } from './message-test/message-test.component';
 import { CalendarTestComponent } from './calendar-test/calendar-test.component';
 import { SliderTestComponent } from './slider-test/slider-test.component';
+import { FabTestComponent } from './fab-test/fab-test.component';
 
 @NgModule({
   declarations: [
@@ -73,7 +76,8 @@ import { SliderTestComponent } from './slider-test/slider-test.component';
     FooterTestComponent,
     MessageTestComponent,
     CalendarTestComponent,
-    SliderTestComponent
+    SliderTestComponent,
+    FabTestComponent
   ],
   imports: [
     BrowserModule,
@@ -103,7 +107,8 @@ import { SliderTestComponent } from './slider-test/slider-test.component';
     InlineSVGModule.forRoot(),
     FooterModule,
     CalendarModule,
-    SliderModule
+    SliderModule,
+    FabModule
   ],
   providers: [MessageService],
   bootstrap: [AppComponent]

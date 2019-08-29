@@ -1,0 +1,19 @@
+<eui-fab-modal [fabSize]="'large'">
+  <div desktop-fab>
+    <span class="icon large inl" [inlineSVG]="'assets/images/icons/chat-fill.svg'"></span><span>Help</span>
+  </div>
+  <span mobile-fab class="icon large" [inlineSVG]="'assets/images/icons/chat-fill.svg'"></span>
+  <div modal-title>
+    Hello world!
+  </div>
+  <div modal-content>
+    <div class="fab-modal-demo__content">
+      Cool stuff happens here!
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+      magna aliqua. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+      pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
+      laborum.
+    </div>
+    <button class="fab-modal-demo__button ea-button ea-button--primary ea-button--micro" (click)="clickSasButton()">{{buttonTextOptions[buttonSelection]}}</button>
+  </div>
+</eui-fab-modal>

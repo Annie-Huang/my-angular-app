@@ -1,0 +1,88 @@
+@import 'ea-style/variables';
+@import 'ea-style/mixins/utils-mixins';
+
+::ng-deep div > .demo-fab {
+  div.ea-fab {
+    // This is used to make the fab inline, so we can show multiple for the demo.
+    position: relative;
+    display: inline-flex;
+    right: 0;
+    bottom: 0;
+    z-index: 0;
+  }
+  div.ea-fab-toggle-container {
+    // This is used to make the toggle fab inline, so we can show multiple for the demo.
+    position: relative;
+    display: inline-flex;
+    flex-flow: row;
+    right: 0;
+    bottom: 0;
+    z-index: 0;
+  }
+}
+
+::ng-deep eui-fab-modal .ea-fab-modal {
+  @include media($ea-mobile) {
+    // Normally, it would be full screen in mobile.
+    // But the showcase navbar has a z-index of 9999, so we lose the title + close button.
+    // Solution: Don't want modal to have an absurd z-index, and we don't want to change the navbar,
+    // so gave this a slightly shorter height, so it'll show below the navbar
+    height: calc(100% - 100px) !important;
+  }
+}
+
+::ng-deep .icon {
+  display: inline-block;
+  height: $icon-size-small;
+  width: $icon-size-small;
+  &.large {
+    height: $icon-size;
+    width: $icon-size;
+  }
+  svg {
+    max-width: 100%;
+    max-height: 100%;
+  }
+  &.inl {
+    margin-right: 8px;
+  }
+}
+
+.implementation {
+  & > h3 {
+    &:first-child {
+      margin-top: 0;
+    }
+    margin-top: 8px;
+    font-weight: 700;
+    font-size: $font-size-body;
+    color: $color-brand-dark-green;
+  }
+}
+
+.examples {
+  display: flex;
+}
+
+.docs {
+  h3 {
+    margin-top: 0;
+  }
+
+  h4 {
+    margin-top: 8px;
+  }
+}
+
+.fab-modal-demo {
+  &__content {
+    max-width: 30vh;
+    @include media($ea-mobile) {
+      max-width: 100%;
+    }
+  }
+  &__button {
+    width: 100%;
+    margin-top: 14px;
+  }
+}
