@@ -1,0 +1,30 @@
+<h3 class="first">Default</h3>
+<eui-bar-chart
+  [chartData]="chartDataSimple"
+  [selectedIndex]="chartSample.defaultSelectedSimple"
+  (valueChange)="selectedBarSimple($event)"
+  [topLeftLegend]="chartSample.topLeftLegend"
+  [topRightLegend]="chartSample.topRightLegend"
+  [bottomLeftLegend]="chartSample.bottomLeftLegend"
+  [bottomRightLegend]="chartSample.bottomRightLegend">
+</eui-bar-chart>
+
+<br/>
+<b>This is the selected bar {{ defaultSelectObjSimple | json }}</b>
+
+<br/><br/><br/>
+
+<h3 class="first">Usage chart</h3>
+<eui-bar-chart
+  class="full-demo"
+  [chartData]="chartDataCompound"
+  [selectedIndex]="chartSample.defaultSelected"
+  (valueChange)="selectedBar($event)"
+  [topLeftLegend]="chartSample.topLeftLegend"
+  [topRightLegend]="chartSample.topRightLegend"
+  [bottomLeftLegend]="chartSample.bottomLeftLegend"
+  [bottomRightLegend]="chartSample.bottomRightLegend">
+</eui-bar-chart>
+
+<br/>
+<b>This is the selected bar {{ defaultSelectObj | json }}</b>

@@ -11,7 +11,7 @@ import { InlineSVGModule } from 'ng-inline-svg';
 import {
   EuiFormsModule, TextfieldModule, SpinnerModule, ModalModule, MessageModule, MessageService,
   DropdownModule, RadioButtonGroupModule, ButtonGroupModule, TextareaModule, CheckboxModule, AutoCompleteModule,
-  AccordionModule, TooltipModule, TabsModule, ProgressIndicatorModule, FooterModule, CalendarModule, SliderModule, FabModule
+  AccordionModule, TooltipModule, TabsModule, ProgressIndicatorModule, FooterModule, CalendarModule, SliderModule, FabModule, BarChartModule
 } from '@ea/ea-ui';
 
 import {TooltipModule as TooltipModulePrime} from 'primeng/tooltip';
@@ -46,6 +46,7 @@ import { MessageTestComponent } from './message-test/message-test.component';
 import { CalendarTestComponent } from './calendar-test/calendar-test.component';
 import { SliderTestComponent } from './slider-test/slider-test.component';
 import { FabTestComponent } from './fab-test/fab-test.component';
+import { BarChartTestComponent } from './bar-chart-test/bar-chart-test.component';
 
 @NgModule({
   declarations: [
@@ -77,7 +78,8 @@ import { FabTestComponent } from './fab-test/fab-test.component';
     MessageTestComponent,
     CalendarTestComponent,
     SliderTestComponent,
-    FabTestComponent
+    FabTestComponent,
+    BarChartTestComponent
   ],
   imports: [
     BrowserModule,
@@ -108,7 +110,8 @@ import { FabTestComponent } from './fab-test/fab-test.component';
     FooterModule,
     CalendarModule,
     SliderModule,
-    FabModule
+    FabModule,
+    BarChartModule
   ],
   providers: [MessageService],
   bootstrap: [AppComponent]
