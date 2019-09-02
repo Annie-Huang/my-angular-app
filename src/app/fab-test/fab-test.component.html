@@ -1,19 +1,66 @@
-<eui-fab-modal [fabSize]="'large'">
+<eui-fab-modal [fabSize]="'large'" [fabTheme]="'primary'">
   <div desktop-fab>
-    <span class="icon large inl" [inlineSVG]="'assets/images/icons/chat-fill.svg'"></span><span>Help</span>
+    <span class="icon medium inl" [inlineSVG]="'assets/images/icons/chat-fill.svg'"></span><span>Help</span>
   </div>
-  <span mobile-fab class="icon large" [inlineSVG]="'assets/images/icons/chat-fill.svg'"></span>
+  <span mobile-fab class="icon medium" [inlineSVG]="'assets/images/icons/chat-fill.svg'"></span>
   <div modal-title>
     Hello world!
   </div>
   <div modal-content>
     <div class="fab-modal-demo__content">
-      Cool stuff happens here!
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-      magna aliqua. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-      pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
-      laborum.
+      <p>Cool stuff happens here!</p>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+        magna aliqua. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+        pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
+        laborum.
+      </p>
+      <button class="fab-modal-demo__button ea-button ea-button--primary ea-button--micro" (click)="clickSasButton()">{{buttonTextOptions[buttonSelection]}}</button>
     </div>
-    <button class="fab-modal-demo__button ea-button ea-button--primary ea-button--micro" (click)="clickSasButton()">{{buttonTextOptions[buttonSelection]}}</button>
   </div>
 </eui-fab-modal>
+
+<div class="content-section implementation">
+  <h3>Default</h3>
+  <div class="examples">
+    <eui-fab-basic class="demo-fab" [entryAnimate]="false">Hi!</eui-fab-basic>
+  </div>
+  <hr>
+  <h3>Supports Icon Content</h3>
+  <div class="examples">
+    <eui-fab-basic class="demo-fab" [entryAnimate]="false"><span class="icon-normal" [inlineSVG]="'assets/images/icons/idea-outline.svg'"></span></eui-fab-basic>
+  </div>
+  <hr>
+  <h3>Basic Extended</h3>
+  <div class="examples">
+    <eui-fab-basic class="demo-fab" [entryAnimate]="false" [extended]="extended" (click)="extendedFabToggle()"><span *ngIf="extended" class="icon inl" [inlineSVG]="'assets/images/icons/gas.svg'"></span>{{extended ? 'So much room for activities!' : 'E'}}</eui-fab-basic>
+  </div>
+  <hr>
+  <h3>Toggleable Expanded</h3>
+  <div class="examples">
+    <eui-fab-toggle class="demo-fab" [entryAnimate]="false">
+      <span collapsed><span class="icon" [inlineSVG]="'assets/images/icons/gas.svg'"></span></span>
+      <div expanded>Fixed medium width!</div>
+    </eui-fab-toggle>
+  </div>
+  <hr>
+  <h3>Sizes</h3>
+  <eui-fab-basic *ngFor="let size of ALL_SIZES" class="demo-fab" [size]="size" [entryAnimate]="false">{{size.charAt(0).toUpperCase()}}</eui-fab-basic>
+  <eui-fab-basic *ngFor="let size of ALL_SIZES" class="demo-fab" [size]="size" [entryAnimate]="false" extended="true">{{size.charAt(0).toUpperCase() + size.substr(1)}}</eui-fab-basic>
+  <hr>
+  <h3>Expanded Widths</h3>
+  <eui-fab-toggle *ngFor="let width of ALL_SIZES" class="demo-fab" [expanded]="true" [width]="width" [entryAnimate]="false"><span expanded>{{width.charAt(0).toUpperCase() + width.substr(1)}}</span></eui-fab-toggle>
+  <p>Can use custom widths too. Can be a preset size ({{ALL_STYLES_STR}}), a number (will be treated as a 'px' value), or a css width ('10vh', '20px', '80pt', etc.).</p>
+  <p>Must be greater than the 'size' attribute, else the 'expanded' width will be smaller than the collapsed width, and it'll look weird.</p>
+  <eui-textfield class="wide-input" (valueChange)="mockWidthChange($event)" placeholder="Input a width, then click the 'i'!"></eui-textfield>
+  <eui-fab-toggle class="demo-fab" [width]="dummyWidth" [entryAnimate]="false">
+    <div collapsed><span class="icon medium" [inlineSVG]="'assets/images/icons/info-outline.svg'"></span> </div>
+    <div expanded>{{dummyWidth}}</div>
+  </eui-fab-toggle>
+  <hr>
+  <h3>Themes</h3>
+  <div class="examples">
+    <eui-fab-basic *ngFor="let style of ALL_STYLES" class="demo-fab" [theme]="style" [entryAnimate]="false"
+                   extended="true">{{style.charAt(0).toUpperCase() + style.substr(1)}}</eui-fab-basic>
+  </div>
+</div>

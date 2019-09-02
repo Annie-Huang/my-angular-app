@@ -25,7 +25,7 @@
   @include media($ea-mobile) {
     // Normally, it would be full screen in mobile.
     // But the showcase navbar has a z-index of 9999, so we lose the title + close button.
-    // Solution: Don't want modal to have an absurd z-index, and we don't want to change the navbar,
+    // Solution: Dont want modal to have an absurd z-index, and we dont want to change the navbar,
     // so gave this a slightly shorter height, so it'll show below the navbar
     height: calc(100% - 100px) !important;
   }
@@ -35,7 +35,7 @@
   display: inline-block;
   height: $icon-size-small;
   width: $icon-size-small;
-  &.large {
+  &.medium {
     height: $icon-size;
     width: $icon-size;
   }
@@ -72,17 +72,25 @@
   h4 {
     margin-top: 8px;
   }
+
+  h5 {
+    font-size: 18px;
+    margin-bottom: 8px;
+  }
 }
 
 .fab-modal-demo {
   &__content {
+    padding: 14px 20px 21px;
     max-width: 30vh;
     @include media($ea-mobile) {
       max-width: 100%;
     }
+    :first-child {
+      margin-top: 0;
+    }
   }
   &__button {
     width: 100%;
-    margin-top: 14px;
   }
 }

@@ -7,10 +7,6 @@ import {FAB_SIZE, FAB_THEME} from '@ea/ea-ui';
   styleUrls: ['./fab-test.component.scss']
 })
 export class FabTestComponent {
-
-  counter = 0;
-  tCounter = 0;
-
   dummyWidth = 'medium';
 
   readonly ALL_STYLES: string[] = Object.values(FAB_THEME);
@@ -24,13 +20,6 @@ export class FabTestComponent {
   buttonSelection = 0;
 
   constructor() {}
-
-  demoCounterClick() {
-    this.counter += 1;
-  }
-  demoTCounterClick() {
-    this.tCounter += 1;
-  }
 
   extendedFabToggle() {
     this.extended = !this.extended;
