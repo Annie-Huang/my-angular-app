@@ -26,6 +26,7 @@ import {CalendarTestComponent} from './calendar-test/calendar-test.component';
 import {SliderTestComponent} from './slider-test/slider-test.component';
 import {FabTestComponent} from './fab-test/fab-test.component';
 import {BarChartTestComponent} from './bar-chart-test/bar-chart-test.component';
+import {AddressSwitcherTestComponent} from './address-switcher-test/address-switcher-test.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
@@ -53,7 +54,8 @@ const routes: Routes = [
   { path: 'calendar', component: CalendarTestComponent },
   { path: 'slider', component: SliderTestComponent },
   { path: 'fab', component: FabTestComponent},
-  { path: 'bar-chart', component: BarChartTestComponent}
+  { path: 'bar-chart', component: BarChartTestComponent},
+  { path: 'address-switcher', component: AddressSwitcherTestComponent}
 ];
 
 @NgModule({

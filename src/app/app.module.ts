@@ -9,9 +9,28 @@ import { InlineSVGModule } from 'ng-inline-svg';
 
 
 import {
-  EuiFormsModule, TextfieldModule, SpinnerModule, ModalModule, MessageModule, MessageService,
-  DropdownModule, RadioButtonGroupModule, ButtonGroupModule, TextareaModule, CheckboxModule, AutoCompleteModule,
-  AccordionModule, TooltipModule, TabsModule, ProgressIndicatorModule, FooterModule, CalendarModule, SliderModule, FabModule, BarChartModule
+  EuiFormsModule,
+  TextfieldModule,
+  SpinnerModule,
+  ModalModule,
+  MessageModule,
+  MessageService,
+  DropdownModule,
+  RadioButtonGroupModule,
+  ButtonGroupModule,
+  TextareaModule,
+  CheckboxModule,
+  AutoCompleteModule,
+  AccordionModule,
+  TooltipModule,
+  TabsModule,
+  ProgressIndicatorModule,
+  FooterModule,
+  CalendarModule,
+  SliderModule,
+  FabModule,
+  BarChartModule,
+  AddressSwitcherModule
 } from '@ea/ea-ui';
 
 import {TooltipModule as TooltipModulePrime} from 'primeng/tooltip';
@@ -47,6 +66,7 @@ import { CalendarTestComponent } from './calendar-test/calendar-test.component';
 import { SliderTestComponent } from './slider-test/slider-test.component';
 import { FabTestComponent } from './fab-test/fab-test.component';
 import { BarChartTestComponent } from './bar-chart-test/bar-chart-test.component';
+import { AddressSwitcherTestComponent } from './address-switcher-test/address-switcher-test.component';
 
 @NgModule({
   declarations: [
@@ -79,7 +99,8 @@ import { BarChartTestComponent } from './bar-chart-test/bar-chart-test.component
     CalendarTestComponent,
     SliderTestComponent,
     FabTestComponent,
-    BarChartTestComponent
+    BarChartTestComponent,
+    AddressSwitcherTestComponent
   ],
   imports: [
     BrowserModule,
@@ -111,7 +132,8 @@ import { BarChartTestComponent } from './bar-chart-test/bar-chart-test.component
     CalendarModule,
     SliderModule,
     FabModule,
-    BarChartModule
+    BarChartModule,
+    AddressSwitcherModule
   ],
   providers: [MessageService],
   bootstrap: [AppComponent]
